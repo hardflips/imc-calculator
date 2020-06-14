@@ -65870,17 +65870,17 @@ vec4 envMapTexelToLinear(vec4 color) {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[16] = list[i];
+    	child_ctx[17] = list[i];
     	return child_ctx;
     }
 
-    // (36:3) <CardTitle>
+    // (37:3) <CardTitle>
     function create_default_slot_15(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Calcule seu IMC");
+    			t = text("Calculadora de IMC");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -65894,14 +65894,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_15.name,
     		type: "slot",
-    		source: "(36:3) <CardTitle>",
+    		source: "(37:3) <CardTitle>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (35:2) <CardHeader>
+    // (36:2) <CardHeader>
     function create_default_slot_14(ctx) {
     	let current;
 
@@ -65924,7 +65924,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		p: function update(ctx, dirty) {
     			const cardtitle_changes = {};
 
-    			if (dirty & /*$$scope*/ 524288) {
+    			if (dirty & /*$$scope*/ 1048576) {
     				cardtitle_changes.$$scope = { dirty, ctx };
     			}
 
@@ -65948,19 +65948,19 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_14.name,
     		type: "slot",
-    		source: "(35:2) <CardHeader>",
+    		source: "(36:2) <CardHeader>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (43:7) <Label>
+    // (44:7) <Label>
     function create_default_slot_13(ctx) {
     	let input;
     	let input_value_value;
     	let t0;
-    	let t1_value = /*value*/ ctx[16] + "";
+    	let t1_value = /*value*/ ctx[17] + "";
     	let t1;
     	let mounted;
     	let dispose;
@@ -65971,11 +65971,11 @@ vec4 envMapTexelToLinear(vec4 color) {
     			t0 = space();
     			t1 = text(t1_value);
     			attr_dev(input, "type", "radio");
-    			input.__value = input_value_value = /*value*/ ctx[16];
+    			input.__value = input_value_value = /*value*/ ctx[17];
     			input.value = input.__value;
     			input.required = true;
-    			/*$$binding_groups*/ ctx[12][0].push(input);
-    			add_location(input, file$e, 43, 8, 960);
+    			/*$$binding_groups*/ ctx[13][0].push(input);
+    			add_location(input, file$e, 44, 8, 991);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, input, anchor);
@@ -65985,7 +65985,7 @@ vec4 envMapTexelToLinear(vec4 color) {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input, "change", /*input_change_handler*/ ctx[11]),
+    					listen_dev(input, "change", /*input_change_handler*/ ctx[12]),
     					listen_dev(
     						input,
     						"change",
@@ -66004,7 +66004,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (dirty & /*optionsGender*/ 16 && input_value_value !== (input_value_value = /*value*/ ctx[16])) {
+    			if (dirty & /*optionsGender*/ 16 && input_value_value !== (input_value_value = /*value*/ ctx[17])) {
     				prop_dev(input, "__value", input_value_value);
     			}
 
@@ -66014,11 +66014,11 @@ vec4 envMapTexelToLinear(vec4 color) {
     				input.checked = input.__value === /*personGender*/ ctx[0];
     			}
 
-    			if (dirty & /*optionsGender*/ 16 && t1_value !== (t1_value = /*value*/ ctx[16] + "")) set_data_dev(t1, t1_value);
+    			if (dirty & /*optionsGender*/ 16 && t1_value !== (t1_value = /*value*/ ctx[17] + "")) set_data_dev(t1, t1_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(input);
-    			/*$$binding_groups*/ ctx[12][0].splice(/*$$binding_groups*/ ctx[12][0].indexOf(input), 1);
+    			/*$$binding_groups*/ ctx[13][0].splice(/*$$binding_groups*/ ctx[13][0].indexOf(input), 1);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(t1);
     			mounted = false;
@@ -66030,14 +66030,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_13.name,
     		type: "slot",
-    		source: "(43:7) <Label>",
+    		source: "(44:7) <Label>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (42:6) <FormGroup>
+    // (43:6) <FormGroup>
     function create_default_slot_12(ctx) {
     	let t;
     	let current;
@@ -66063,7 +66063,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		p: function update(ctx, dirty) {
     			const label_changes = {};
 
-    			if (dirty & /*$$scope, optionsGender, personGender, handleChangeGender*/ 524337) {
+    			if (dirty & /*$$scope, optionsGender, personGender, handleChangeGender*/ 1048625) {
     				label_changes.$$scope = { dirty, ctx };
     			}
 
@@ -66088,14 +66088,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_12.name,
     		type: "slot",
-    		source: "(42:6) <FormGroup>",
+    		source: "(43:6) <FormGroup>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (41:5) {#each optionsGender as value}
+    // (42:5) {#each optionsGender as value}
     function create_each_block(ctx) {
     	let current;
 
@@ -66118,7 +66118,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		p: function update(ctx, dirty) {
     			const formgroup_changes = {};
 
-    			if (dirty & /*$$scope, optionsGender, personGender, handleChangeGender*/ 524337) {
+    			if (dirty & /*$$scope, optionsGender, personGender, handleChangeGender*/ 1048625) {
     				formgroup_changes.$$scope = { dirty, ctx };
     			}
 
@@ -66142,14 +66142,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(41:5) {#each optionsGender as value}",
+    		source: "(42:5) {#each optionsGender as value}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (58:5) <Label for="ageInput">
+    // (59:5) <Label for="ageInput">
     function create_default_slot_11(ctx) {
     	let t;
 
@@ -66169,14 +66169,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_11.name,
     		type: "slot",
-    		source: "(58:5) <Label for=\\\"ageInput\\\">",
+    		source: "(59:5) <Label for=\\\"ageInput\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (57:4) <FormGroup>
+    // (58:4) <FormGroup>
     function create_default_slot_10(ctx) {
     	let t;
     	let updating_value;
@@ -66192,7 +66192,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		});
 
     	function input_value_binding(value) {
-    		/*input_value_binding*/ ctx[13].call(null, value);
+    		/*input_value_binding*/ ctx[14].call(null, value);
     	}
 
     	let input_props = {
@@ -66202,7 +66202,10 @@ vec4 envMapTexelToLinear(vec4 color) {
     		placeholder: "Digite sua idade",
     		minlength: "1",
     		maxlength: "3",
-    		required: true
+    		required: true,
+    		class: /*personAge*/ ctx[1] === "" && /*pristineField*/ ctx[11] == false
+    		? "has-error"
+    		: ""
     	};
 
     	if (/*personAge*/ ctx[1] !== void 0) {
@@ -66232,12 +66235,16 @@ vec4 envMapTexelToLinear(vec4 color) {
     			ctx = new_ctx;
     			const label_changes = {};
 
-    			if (dirty & /*$$scope*/ 524288) {
+    			if (dirty & /*$$scope*/ 1048576) {
     				label_changes.$$scope = { dirty, ctx };
     			}
 
     			label.$set(label_changes);
     			const input_changes = {};
+
+    			if (dirty & /*personAge, pristineField*/ 2050) input_changes.class = /*personAge*/ ctx[1] === "" && /*pristineField*/ ctx[11] == false
+    			? "has-error"
+    			: "";
 
     			if (!updating_value && dirty & /*personAge*/ 2) {
     				updating_value = true;
@@ -66269,14 +66276,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_10.name,
     		type: "slot",
-    		source: "(57:4) <FormGroup>",
+    		source: "(58:4) <FormGroup>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (73:5) <Label for="heightInput">
+    // (75:5) <Label for="heightInput">
     function create_default_slot_9(ctx) {
     	let t;
 
@@ -66296,14 +66303,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_9.name,
     		type: "slot",
-    		source: "(73:5) <Label for=\\\"heightInput\\\">",
+    		source: "(75:5) <Label for=\\\"heightInput\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (72:4) <FormGroup>
+    // (74:4) <FormGroup>
     function create_default_slot_8(ctx) {
     	let t;
     	let updating_value;
@@ -66319,7 +66326,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		});
 
     	function input_value_binding_1(value) {
-    		/*input_value_binding_1*/ ctx[14].call(null, value);
+    		/*input_value_binding_1*/ ctx[15].call(null, value);
     	}
 
     	let input_props = {
@@ -66329,7 +66336,10 @@ vec4 envMapTexelToLinear(vec4 color) {
     		placeholder: "Digite sua altura (ex: 170 cm)",
     		minlength: "1",
     		maxlength: "4",
-    		required: true
+    		required: true,
+    		class: /*personHeight*/ ctx[2] === "" && /*pristineField*/ ctx[11] == false
+    		? "has-error"
+    		: ""
     	};
 
     	if (/*personHeight*/ ctx[2] !== void 0) {
@@ -66359,12 +66369,16 @@ vec4 envMapTexelToLinear(vec4 color) {
     			ctx = new_ctx;
     			const label_changes = {};
 
-    			if (dirty & /*$$scope*/ 524288) {
+    			if (dirty & /*$$scope*/ 1048576) {
     				label_changes.$$scope = { dirty, ctx };
     			}
 
     			label.$set(label_changes);
     			const input_changes = {};
+
+    			if (dirty & /*personHeight, pristineField*/ 2052) input_changes.class = /*personHeight*/ ctx[2] === "" && /*pristineField*/ ctx[11] == false
+    			? "has-error"
+    			: "";
 
     			if (!updating_value && dirty & /*personHeight*/ 4) {
     				updating_value = true;
@@ -66396,14 +66410,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_8.name,
     		type: "slot",
-    		source: "(72:4) <FormGroup>",
+    		source: "(74:4) <FormGroup>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (88:5) <Label for="weightInput">
+    // (91:5) <Label for="weightInput">
     function create_default_slot_7(ctx) {
     	let t;
 
@@ -66423,14 +66437,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_7.name,
     		type: "slot",
-    		source: "(88:5) <Label for=\\\"weightInput\\\">",
+    		source: "(91:5) <Label for=\\\"weightInput\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (87:4) <FormGroup>
+    // (90:4) <FormGroup>
     function create_default_slot_6(ctx) {
     	let t;
     	let updating_value;
@@ -66446,7 +66460,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		});
 
     	function input_value_binding_2(value) {
-    		/*input_value_binding_2*/ ctx[15].call(null, value);
+    		/*input_value_binding_2*/ ctx[16].call(null, value);
     	}
 
     	let input_props = {
@@ -66456,7 +66470,10 @@ vec4 envMapTexelToLinear(vec4 color) {
     		placeholder: "Digite seu peso (ex: 85 quilos)",
     		minlength: "1",
     		maxlength: "3",
-    		required: true
+    		required: true,
+    		class: /*personWeight*/ ctx[3] === "" && /*pristineField*/ ctx[11] == false
+    		? "has-error"
+    		: ""
     	};
 
     	if (/*personWeight*/ ctx[3] !== void 0) {
@@ -66486,12 +66503,16 @@ vec4 envMapTexelToLinear(vec4 color) {
     			ctx = new_ctx;
     			const label_changes = {};
 
-    			if (dirty & /*$$scope*/ 524288) {
+    			if (dirty & /*$$scope*/ 1048576) {
     				label_changes.$$scope = { dirty, ctx };
     			}
 
     			label.$set(label_changes);
     			const input_changes = {};
+
+    			if (dirty & /*personWeight, pristineField*/ 2056) input_changes.class = /*personWeight*/ ctx[3] === "" && /*pristineField*/ ctx[11] == false
+    			? "has-error"
+    			: "";
 
     			if (!updating_value && dirty & /*personWeight*/ 8) {
     				updating_value = true;
@@ -66523,14 +66544,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_6.name,
     		type: "slot",
-    		source: "(87:4) <FormGroup>",
+    		source: "(90:4) <FormGroup>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (102:4) <Button color="success" type="button" on:click={handleCalculateIMC}>
+    // (106:4) <Button color="success" type="button" on:click={handleCalculateIMC}>
     function create_default_slot_5(ctx) {
     	let t;
 
@@ -66550,14 +66571,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_5.name,
     		type: "slot",
-    		source: "(102:4) <Button color=\\\"success\\\" type=\\\"button\\\" on:click={handleCalculateIMC}>",
+    		source: "(106:4) <Button color=\\\"success\\\" type=\\\"button\\\" on:click={handleCalculateIMC}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (39:3) <Form id="calculator" on:submit={e => e.preventDefault()}>
+    // (40:3) <Form id="calculator" on:submit={e => e.preventDefault()}>
     function create_default_slot_4(ctx) {
     	let div;
     	let t0;
@@ -66631,8 +66652,8 @@ vec4 envMapTexelToLinear(vec4 color) {
     			create_component(formgroup2.$$.fragment);
     			t3 = space();
     			create_component(button.$$.fragment);
-    			attr_dev(div, "class", "radio-group svelte-4xkxsm");
-    			add_location(div, file$e, 39, 4, 853);
+    			attr_dev(div, "class", "radio-group svelte-1gdst7w");
+    			add_location(div, file$e, 40, 4, 884);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -66684,28 +66705,28 @@ vec4 envMapTexelToLinear(vec4 color) {
 
     			const formgroup0_changes = {};
 
-    			if (dirty & /*$$scope, personAge, handleChangeAge*/ 524354) {
+    			if (dirty & /*$$scope, personAge, pristineField, handleChangeAge*/ 1050690) {
     				formgroup0_changes.$$scope = { dirty, ctx };
     			}
 
     			formgroup0.$set(formgroup0_changes);
     			const formgroup1_changes = {};
 
-    			if (dirty & /*$$scope, personHeight, handleChangeHeight*/ 524420) {
+    			if (dirty & /*$$scope, personHeight, pristineField, handleChangeHeight*/ 1050756) {
     				formgroup1_changes.$$scope = { dirty, ctx };
     			}
 
     			formgroup1.$set(formgroup1_changes);
     			const formgroup2_changes = {};
 
-    			if (dirty & /*$$scope, personWeight, handleChangeWeight*/ 524552) {
+    			if (dirty & /*$$scope, personWeight, pristineField, handleChangeWeight*/ 1050888) {
     				formgroup2_changes.$$scope = { dirty, ctx };
     			}
 
     			formgroup2.$set(formgroup2_changes);
     			const button_changes = {};
 
-    			if (dirty & /*$$scope*/ 524288) {
+    			if (dirty & /*$$scope*/ 1048576) {
     				button_changes.$$scope = { dirty, ctx };
     			}
 
@@ -66755,14 +66776,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(39:3) <Form id=\\\"calculator\\\" on:submit={e => e.preventDefault()}>",
+    		source: "(40:3) <Form id=\\\"calculator\\\" on:submit={e => e.preventDefault()}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (106:3) {#if idealWeight}
+    // (110:3) {#if idealWeight}
     function create_if_block$8(ctx) {
     	let br;
     	let t;
@@ -66785,8 +66806,8 @@ vec4 envMapTexelToLinear(vec4 color) {
     			t = space();
     			div = element("div");
     			create_component(toast.$$.fragment);
-    			add_location(br, file$e, 106, 4, 2425);
-    			add_location(div, file$e, 107, 4, 2436);
+    			add_location(br, file$e, 110, 4, 2699);
+    			add_location(div, file$e, 111, 4, 2710);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, br, anchor);
@@ -66798,7 +66819,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		p: function update(ctx, dirty) {
     			const toast_changes = {};
 
-    			if (dirty & /*$$scope, idealWeight*/ 525312) {
+    			if (dirty & /*$$scope, idealWeight*/ 1049600) {
     				toast_changes.$$scope = { dirty, ctx };
     			}
 
@@ -66833,14 +66854,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_if_block$8.name,
     		type: "if",
-    		source: "(106:3) {#if idealWeight}",
+    		source: "(110:3) {#if idealWeight}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (110:6) <ToastBody>
+    // (114:6) <ToastBody>
     function create_default_slot_3(ctx) {
     	let t0;
     	let strong;
@@ -66850,11 +66871,11 @@ vec4 envMapTexelToLinear(vec4 color) {
 
     	const block = {
     		c: function create() {
-    			t0 = text("Sua faixa de peso ideal: ");
+    			t0 = text("Faixa de peso ideal: ");
     			strong = element("strong");
     			t1 = text(t1_value);
     			t2 = text(" kg");
-    			add_location(strong, file$e, 110, 32, 2549);
+    			add_location(strong, file$e, 114, 28, 2819);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -66875,14 +66896,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(110:6) <ToastBody>",
+    		source: "(114:6) <ToastBody>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (109:5) <Toast class="mr-1">
+    // (113:5) <Toast class="mr-1">
     function create_default_slot_2(ctx) {
     	let current;
 
@@ -66905,7 +66926,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		p: function update(ctx, dirty) {
     			const toastbody_changes = {};
 
-    			if (dirty & /*$$scope, idealWeight*/ 525312) {
+    			if (dirty & /*$$scope, idealWeight*/ 1049600) {
     				toastbody_changes.$$scope = { dirty, ctx };
     			}
 
@@ -66929,14 +66950,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(109:5) <Toast class=\\\"mr-1\\\">",
+    		source: "(113:5) <Toast class=\\\"mr-1\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (38:2) <CardBody>
+    // (39:2) <CardBody>
     function create_default_slot_1(ctx) {
     	let t;
     	let if_block_anchor;
@@ -66971,7 +66992,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		p: function update(ctx, dirty) {
     			const form_changes = {};
 
-    			if (dirty & /*$$scope, handleCalculateIMC, personWeight, handleChangeWeight, personHeight, handleChangeHeight, personAge, handleChangeAge, optionsGender, personGender, handleChangeGender*/ 525311) {
+    			if (dirty & /*$$scope, handleCalculateIMC, personWeight, pristineField, handleChangeWeight, personHeight, handleChangeHeight, personAge, handleChangeAge, optionsGender, personGender, handleChangeGender*/ 1051647) {
     				form_changes.$$scope = { dirty, ctx };
     			}
 
@@ -67023,14 +67044,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(38:2) <CardBody>",
+    		source: "(39:2) <CardBody>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (34:1) <Card color="dark" inverse>
+    // (35:1) <Card color="dark" inverse>
     function create_default_slot(ctx) {
     	let t;
     	let current;
@@ -67066,14 +67087,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		p: function update(ctx, dirty) {
     			const cardheader_changes = {};
 
-    			if (dirty & /*$$scope*/ 524288) {
+    			if (dirty & /*$$scope*/ 1048576) {
     				cardheader_changes.$$scope = { dirty, ctx };
     			}
 
     			cardheader.$set(cardheader_changes);
     			const cardbody_changes = {};
 
-    			if (dirty & /*$$scope, idealWeight, handleCalculateIMC, personWeight, handleChangeWeight, personHeight, handleChangeHeight, personAge, handleChangeAge, optionsGender, personGender, handleChangeGender*/ 526335) {
+    			if (dirty & /*$$scope, idealWeight, handleCalculateIMC, personWeight, pristineField, handleChangeWeight, personHeight, handleChangeHeight, personAge, handleChangeAge, optionsGender, personGender, handleChangeGender*/ 1052671) {
     				cardbody_changes.$$scope = { dirty, ctx };
     			}
 
@@ -67101,7 +67122,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(34:1) <Card color=\\\"dark\\\" inverse>",
+    		source: "(35:1) <Card color=\\\"dark\\\" inverse>",
     		ctx
     	});
 
@@ -67127,7 +67148,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			div = element("div");
     			create_component(card.$$.fragment);
     			attr_dev(div, "class", "wrapper");
-    			add_location(div, file$e, 32, 0, 643);
+    			add_location(div, file$e, 33, 0, 671);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -67140,7 +67161,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		p: function update(ctx, [dirty]) {
     			const card_changes = {};
 
-    			if (dirty & /*$$scope, idealWeight, handleCalculateIMC, personWeight, handleChangeWeight, personHeight, handleChangeHeight, personAge, handleChangeAge, optionsGender, personGender, handleChangeGender*/ 526335) {
+    			if (dirty & /*$$scope, idealWeight, handleCalculateIMC, personWeight, pristineField, handleChangeWeight, personHeight, handleChangeHeight, personAge, handleChangeAge, optionsGender, personGender, handleChangeGender*/ 1052671) {
     				card_changes.$$scope = { dirty, ctx };
     			}
 
@@ -67186,6 +67207,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     	let { handleChangeWeight } = $$props;
     	let { handleCalculateIMC } = $$props;
     	let { idealWeight } = $$props;
+    	let { pristineField } = $$props;
 
     	const writable_props = [
     		"optionsGender",
@@ -67198,7 +67220,8 @@ vec4 envMapTexelToLinear(vec4 color) {
     		"handleChangeHeight",
     		"handleChangeWeight",
     		"handleCalculateIMC",
-    		"idealWeight"
+    		"idealWeight",
+    		"pristineField"
     	];
 
     	Object.keys($$props).forEach(key => {
@@ -67241,6 +67264,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		if ("handleChangeWeight" in $$props) $$invalidate(8, handleChangeWeight = $$props.handleChangeWeight);
     		if ("handleCalculateIMC" in $$props) $$invalidate(9, handleCalculateIMC = $$props.handleCalculateIMC);
     		if ("idealWeight" in $$props) $$invalidate(10, idealWeight = $$props.idealWeight);
+    		if ("pristineField" in $$props) $$invalidate(11, pristineField = $$props.pristineField);
     	};
 
     	$$self.$capture_state = () => ({
@@ -67267,7 +67291,8 @@ vec4 envMapTexelToLinear(vec4 color) {
     		handleChangeHeight,
     		handleChangeWeight,
     		handleCalculateIMC,
-    		idealWeight
+    		idealWeight,
+    		pristineField
     	});
 
     	$$self.$inject_state = $$props => {
@@ -67282,6 +67307,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		if ("handleChangeWeight" in $$props) $$invalidate(8, handleChangeWeight = $$props.handleChangeWeight);
     		if ("handleCalculateIMC" in $$props) $$invalidate(9, handleCalculateIMC = $$props.handleCalculateIMC);
     		if ("idealWeight" in $$props) $$invalidate(10, idealWeight = $$props.idealWeight);
+    		if ("pristineField" in $$props) $$invalidate(11, pristineField = $$props.pristineField);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -67300,6 +67326,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		handleChangeWeight,
     		handleCalculateIMC,
     		idealWeight,
+    		pristineField,
     		input_change_handler,
     		$$binding_groups,
     		input_value_binding,
@@ -67323,7 +67350,8 @@ vec4 envMapTexelToLinear(vec4 color) {
     			handleChangeHeight: 7,
     			handleChangeWeight: 8,
     			handleCalculateIMC: 9,
-    			idealWeight: 10
+    			idealWeight: 10,
+    			pristineField: 11
     		});
 
     		dispatch_dev("SvelteRegisterComponent", {
@@ -67378,6 +67406,10 @@ vec4 envMapTexelToLinear(vec4 color) {
 
     		if (/*idealWeight*/ ctx[10] === undefined && !("idealWeight" in props)) {
     			console.warn("<Calculator> was created without expected prop 'idealWeight'");
+    		}
+
+    		if (/*pristineField*/ ctx[11] === undefined && !("pristineField" in props)) {
+    			console.warn("<Calculator> was created without expected prop 'pristineField'");
     		}
     	}
 
@@ -67466,6 +67498,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     	}
 
     	set idealWeight(value) {
+    		throw new Error("<Calculator>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get pristineField() {
+    		throw new Error("<Calculator>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set pristineField(value) {
     		throw new Error("<Calculator>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
     }
@@ -68195,24 +68235,25 @@ vec4 envMapTexelToLinear(vec4 color) {
     	const animation = new Animation({
     			props: {
     				scene: /*scene*/ ctx[0],
-    				handleGetAnimationScene: /*func*/ ctx[20]
+    				handleGetAnimationScene: /*func*/ ctx[21]
     			},
     			$$inline: true
     		});
 
     	const calculator = new Calculator({
     			props: {
-    				optionsGender: /*optionsGender*/ ctx[11],
+    				optionsGender: /*optionsGender*/ ctx[12],
     				personGender: /*personGender*/ ctx[1],
     				personAge: /*personAge*/ ctx[2],
     				personHeight: /*personHeight*/ ctx[3],
     				personWeight: /*personWeight*/ ctx[4],
     				idealWeight: /*idealWeight*/ ctx[10],
-    				handleChangeGender: /*func_1*/ ctx[21],
-    				handleChangeAge: /*func_2*/ ctx[22],
-    				handleChangeHeight: /*func_3*/ ctx[23],
-    				handleChangeWeight: /*func_4*/ ctx[24],
-    				handleCalculateIMC: /*func_5*/ ctx[25]
+    				handleChangeGender: /*func_1*/ ctx[22],
+    				handleChangeAge: /*func_2*/ ctx[23],
+    				handleChangeHeight: /*func_3*/ ctx[24],
+    				handleChangeWeight: /*func_4*/ ctx[25],
+    				handleCalculateIMC: /*func_5*/ ctx[26],
+    				pristineField: /*pristineField*/ ctx[11]
     			},
     			$$inline: true
     		});
@@ -68265,6 +68306,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			if (dirty & /*personHeight*/ 8) calculator_changes.personHeight = /*personHeight*/ ctx[3];
     			if (dirty & /*personWeight*/ 16) calculator_changes.personWeight = /*personWeight*/ ctx[4];
     			if (dirty & /*idealWeight*/ 1024) calculator_changes.idealWeight = /*idealWeight*/ ctx[10];
+    			if (dirty & /*pristineField*/ 2048) calculator_changes.pristineField = /*pristineField*/ ctx[11];
     			calculator.$set(calculator_changes);
     			const result_changes = {};
     			if (dirty & /*resultIMC*/ 32) result_changes.resultIMC = /*resultIMC*/ ctx[5];
@@ -68325,11 +68367,13 @@ vec4 envMapTexelToLinear(vec4 color) {
     	let loadProgress = false;
     	let isLoading = false;
     	let idealWeight = null;
+    	let pristineField = true;
     	let { progressData } = $$props;
     	let { idealWeightData } = $$props;
     	let optionsGender = ["Mulher", "Homem"];
 
     	const changeGender = param => {
+    		$$invalidate(3, personHeight = "");
     		$$invalidate(1, personGender = param);
 
     		if (personGender == "Mulher") {
@@ -68354,20 +68398,23 @@ vec4 envMapTexelToLinear(vec4 color) {
     	const changeHeight = param => {
     		$$invalidate(3, personHeight = param);
     		let scaled = parseInt(personHeight) / 180;
-    		let limitHeight;
+    		let maxHeight;
+    		let minHeight;
 
     		if (personGender == "Mulher") {
-    			limitHeight = 185;
+    			maxHeight = 183;
+    			minHeight = 144;
     		} else {
-    			limitHeight = 193;
+    			maxHeight = 193;
+    			minHeight = 155;
     		}
 
     		if (scaled && scaled != "" && scaled != null) {
-    			if (parseInt(personHeight) > limitHeight) {
+    			if (parseInt(personHeight) > maxHeight) {
     				$$invalidate(3, personHeight = "");
     				scene.children[4].scale.set(1, 1, 1);
     				scene.children[5].scale.set(1, 1, 1);
-    			} else if (parseInt(personHeight) >= 150) {
+    			} else if (parseInt(personHeight) >= minHeight) {
     				scene.children[4].scale.set(scaled, scaled, scaled);
     				scene.children[5].scale.set(scaled, scaled, scaled);
     			} else {
@@ -68392,6 +68439,7 @@ vec4 envMapTexelToLinear(vec4 color) {
 
     	const calculateIMC = () => {
     		$$invalidate(5, resultIMC = null);
+    		$$invalidate(11, pristineField = false);
 
     		if (personAge && personHeight && personWeight) {
     			let heightFormated = personHeight.toString().replace(/(\d)(?=(\d{2})+(?!\d))/g, "$1.");
@@ -68512,8 +68560,8 @@ vec4 envMapTexelToLinear(vec4 color) {
     	const func_5 = () => calculateIMC();
 
     	$$self.$set = $$props => {
-    		if ("progressData" in $$props) $$invalidate(18, progressData = $$props.progressData);
-    		if ("idealWeightData" in $$props) $$invalidate(19, idealWeightData = $$props.idealWeightData);
+    		if ("progressData" in $$props) $$invalidate(19, progressData = $$props.progressData);
+    		if ("idealWeightData" in $$props) $$invalidate(20, idealWeightData = $$props.idealWeightData);
     	};
 
     	$$self.$capture_state = () => ({
@@ -68532,6 +68580,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		loadProgress,
     		isLoading,
     		idealWeight,
+    		pristineField,
     		progressData,
     		idealWeightData,
     		optionsGender,
@@ -68558,9 +68607,10 @@ vec4 envMapTexelToLinear(vec4 color) {
     		if ("loadProgress" in $$props) $$invalidate(8, loadProgress = $$props.loadProgress);
     		if ("isLoading" in $$props) $$invalidate(9, isLoading = $$props.isLoading);
     		if ("idealWeight" in $$props) $$invalidate(10, idealWeight = $$props.idealWeight);
-    		if ("progressData" in $$props) $$invalidate(18, progressData = $$props.progressData);
-    		if ("idealWeightData" in $$props) $$invalidate(19, idealWeightData = $$props.idealWeightData);
-    		if ("optionsGender" in $$props) $$invalidate(11, optionsGender = $$props.optionsGender);
+    		if ("pristineField" in $$props) $$invalidate(11, pristineField = $$props.pristineField);
+    		if ("progressData" in $$props) $$invalidate(19, progressData = $$props.progressData);
+    		if ("idealWeightData" in $$props) $$invalidate(20, idealWeightData = $$props.idealWeightData);
+    		if ("optionsGender" in $$props) $$invalidate(12, optionsGender = $$props.optionsGender);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -68579,6 +68629,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		loadProgress,
     		isLoading,
     		idealWeight,
+    		pristineField,
     		optionsGender,
     		changeGender,
     		changeAge,
@@ -68600,7 +68651,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     class App extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$h, create_fragment$h, safe_not_equal, { progressData: 18, idealWeightData: 19 });
+    		init(this, options, instance$h, create_fragment$h, safe_not_equal, { progressData: 19, idealWeightData: 20 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -68612,11 +68663,11 @@ vec4 envMapTexelToLinear(vec4 color) {
     		const { ctx } = this.$$;
     		const props = options.props || {};
 
-    		if (/*progressData*/ ctx[18] === undefined && !("progressData" in props)) {
+    		if (/*progressData*/ ctx[19] === undefined && !("progressData" in props)) {
     			console.warn("<App> was created without expected prop 'progressData'");
     		}
 
-    		if (/*idealWeightData*/ ctx[19] === undefined && !("idealWeightData" in props)) {
+    		if (/*idealWeightData*/ ctx[20] === undefined && !("idealWeightData" in props)) {
     			console.warn("<App> was created without expected prop 'idealWeightData'");
     		}
     	}
@@ -68666,125 +68717,137 @@ vec4 envMapTexelToLinear(vec4 color) {
     		idealWeightData: {
     			female: [
     				{
-    					weight: '45 - 52',
+    					weight: '41 - 51',
+    					height: 1.44
+    				},
+    				{
+    					weight: '42 - 52',
+    					height: 1.45
+    				},
+    				{
+    					weight: '43 - 53',
+    					height: 1.47
+    				},
+    				{
+    					weight: '44 - 56',
     					height: 1.50
     				},
     				{
-    					weight: '44 - 46',
+    					weight: '46 - 57',
     					height: 1.52
     				},
     				{
-    					weight: '47 - 48',
+    					weight: '47 - 59',
     					height: 1.55
     				},
     				{
-    					weight: '48 - 51',
+    					weight: '48 - 61',
     					height: 1.57
     				},
     				{
-    					weight: '49 - 53',
+    					weight: '50 - 63',
     					height: 1.60
     				},
     				{
-    					weight: '51 - 56',
-    					height: 1.63
+    					weight: '51 - 65',
+    					height: 1.62
     				},
     				{
-    					weight: '52 - 59',
+    					weight: '53 - 67',
     					height: 1.65
     				},
     				{
-    					weight: '53 - 62',
-    					height: 1.68
+    					weight: '55 - 69',
+    					height: 1.67
     				},
     				{
-    					weight: '55 - 64',
+    					weight: '57 - 59',
     					height: 1.70
     				},
     				{
-    					weight: '56 - 67',
-    					height: 1.73
-    				},
-    				{
-    					weight: '58 - 69',
-    					height: 1.75
+    					weight: '58 - 72',
+    					height: 1.72
     				},
     				{
     					weight: '60 - 76',
-    					height: 1.78
+    					height: 1.75
     				},
     				{
-    					weight: '61 - 77',
+    					weight: '62 - 78',
+    					height: 1.77
+    				},
+    				{
+    					weight: '65 - 80',
     					height: 1.80
     				},
     				{
-    					weight: '63 - 80',
+    					weight: '68 - 83',
     					height: 1.83
-    				},
-    				{
-    					weight: '65 - 82',
-    					height: 1.85
     				}
     			],
     			male: [
     				{
-    					weight: '52 - 55',
+    					weight: '50 - 59',
+    					height: 1.55
+    				},
+    				{
+    					weight: '52 - 61',
     					height: 1.57
     				},
     				{
-    					weight: '54 - 58',
+    					weight: '53 - 63',
     					height: 1.60
     				},
     				{
-    					weight: '57 - 62',
-    					height: 1.63
+    					weight: '54 - 65',
+    					height: 1.62
     				},
     				{
-    					weight: '59 - 66',
+    					weight: '56 - 67',
     					height: 1.65
     				},
     				{
-    					weight: '61 - 69',
-    					height: 1.68
+    					weight: '57 - 69',
+    					height: 1.67
     				},
     				{
-    					weight: '63 - 73',
+    					weight: '59 - 72',
     					height: 1.70
     				},
     				{
-    					weight: '66 - 77',
-    					height: 1.73
+    					weight: '61 - 74',
+    					height: 1.72
     				},
     				{
-    					weight: '68 - 79',
+    					weight: '63 - 76',
     					height: 1.75
     				},
     				{
-    					weight: '70 - 80',
-    					height: 1.78
+    					weight: '64 - 78',
+    					height: 1.77
     				},
     				{
-    					weight: '64 - 81',
+    					weight: '66 - 80',
     					height: 1.80
     				},
     				{
-    					weight: '75 - 91',
-    					height: 1.83
+    					weight: '68 - 82',
+    					height: 1.82
     				},
     				{
-    					weight: '77 - 95',
+    					weight: '70 - 85',
     					height: 1.85
     				},
     				{
-    					weight: '79 - 98',
+    					weight: '73 - 88',
     					height: 1.88
     				},
     				{
-    					weight: '82 - 102',
-    					height: 1.91
+    					weight: '76 - 90',
+    					height: 1.90
     				},
     				{
-    					weight: '84 - 106',
+    					weight: '79 - 92',
     					height: 1.93
     				}
     			]

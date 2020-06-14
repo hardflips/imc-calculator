@@ -15,6 +15,7 @@
 	let loadProgress = false;
 	let isLoading = false;
 	let idealWeight = null;
+	let pristineField = true;
 	
 	export let progressData;
 	export let idealWeightData;
@@ -25,6 +26,7 @@
 	];
 
 	const changeGender = (param) => {
+		personHeight = '';
 		personGender = param;
 		if (personGender == 'Mulher'){
 			scene.children[4].visible = true;
@@ -47,22 +49,25 @@
 	const changeHeight = (param) => {
 		personHeight = param;
 		let scaled = parseInt(personHeight) / 180;
-		let limitHeight;
+		let maxHeight;
+		let minHeight;
 
 		if (personGender == 'Mulher'){
-			limitHeight = 185;
+			maxHeight = 183;
+			minHeight = 144;
 		}
 		else {
-			limitHeight = 193;
+			maxHeight = 193;
+			minHeight = 155;
 		}
 
 		if (scaled && scaled != '' && scaled != null){
-			if (parseInt(personHeight) > limitHeight){
+			if (parseInt(personHeight) > maxHeight){
 				personHeight = '';
 				scene.children[4].scale.set(1,1,1);
 				scene.children[5].scale.set(1,1,1);
 			}
-			else if (parseInt(personHeight) >= 150){
+			else if (parseInt(personHeight) >= minHeight){
 				scene.children[4].scale.set(scaled,scaled,scaled);
 				scene.children[5].scale.set(scaled,scaled,scaled);
 			}
@@ -85,6 +90,7 @@
 
 	const calculateIMC = () => {
 		resultIMC = null;
+		pristineField = false;
 		if (personAge && personHeight && personWeight){
 			let heightFormated = personHeight.toString().replace(/(\d)(?=(\d{2})+(?!\d))/g, "$1.");
 			resultIMC = roundToTwo(personWeight / (parseFloat(heightFormated) * parseFloat(heightFormated)));
@@ -207,6 +213,7 @@
 	handleChangeHeight={(param) => changeHeight(param)}
 	handleChangeWeight={(param) => changeWeight(param)}
 	handleCalculateIMC={() => calculateIMC()}
+	pristineField={pristineField}
 />
 
 <Result

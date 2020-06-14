@@ -27,13 +27,14 @@
 	export let handleChangeWeight;
 	export let handleCalculateIMC;
 	export let idealWeight;
+	export let pristineField;
 
 </script>
 
 <div class="wrapper">
 	<Card color="dark" inverse>
 		<CardHeader>
-			<CardTitle>Calcule seu IMC</CardTitle>
+			<CardTitle>Calculadora de IMC</CardTitle>
 		</CardHeader>
 		<CardBody>
 			<Form id="calculator" on:submit={e => e.preventDefault()}>
@@ -66,6 +67,7 @@
 						bind:value={personAge}
 						required
 						on:change={handleChangeAge(personAge)}
+						class="{personAge === '' && pristineField == false ? 'has-error' : ''}"
 					/>
 				</FormGroup>
 
@@ -81,6 +83,7 @@
 						bind:value={personHeight}
 						required
 						on:change={handleChangeHeight(personHeight)}
+						class="{personHeight === '' && pristineField == false ? 'has-error' : ''}"
 					/>
 				</FormGroup>
 
@@ -96,6 +99,7 @@
 						bind:value={personWeight}
 						required
 						on:change={handleChangeWeight(personWeight)}
+						class="{personWeight === '' && pristineField == false ? 'has-error' : ''}"
 					/>
 				</FormGroup>
 
@@ -108,7 +112,7 @@
 				<div in:fly="{{duration: 500 }}">
 					<Toast class="mr-1">
 						<ToastBody>
-							Sua faixa de peso ideal: <strong>{idealWeight.weight} kg</strong>
+							Faixa de peso ideal: <strong>{idealWeight.weight} kg</strong>
 						</ToastBody>
 					</Toast>
 				</div>
@@ -147,6 +151,14 @@
 	:global(.toast-body strong) {
 		font-size: 18px;
 		color: #28a745;
+	}
+
+	:global(.form-control.has-error) {
+		border-color: red;
+	}
+
+	:global(.form-control.has-error::placeholder) {
+		color: red;
 	}
 
 	@media (min-width:320px) {
