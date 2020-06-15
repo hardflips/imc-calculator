@@ -1,4 +1,8 @@
-Calculadora de IMC
+# Calculadora de IMC
+
+Desenvolvido em Svelte e Three.js
+
+![alt text](https://imgur.com/AfnY5s6.jpg?raw=true)
 
 ---
 
