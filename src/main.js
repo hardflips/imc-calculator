@@ -88,11 +88,11 @@ const app = new App({
 					height: 1.77
 				},
 				{
-					weight: '65 - 80',
+					weight: '65 - 79',
 					height: 1.80
 				},
 				{
-					weight: '68 - 83',
+					weight: '68 - 81',
 					height: 1.83
 				}
 			],
