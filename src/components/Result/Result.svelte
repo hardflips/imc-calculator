@@ -9,7 +9,7 @@
 </script>
 
 {#if loadProgress}
-	<div in:fade="{{duration: 500 }}" class="progress-wrapper">
+	<div class="progress-wrapper" in:fade="{{duration: 500 }}" out:fade="{{duration: 500 }}">
 		<Progress multi>
 			<Progress bar color="low" value="20" class="low">
 				<span>Abaixo do peso <br><small>0,0 - 18,4</small></span>
@@ -31,7 +31,7 @@
 {/if}
 
 {#if resultIMC}
-	<div class="tag-result" style="left: calc({positionLeft} - 65px); background-color:{backgrondColor}">
+	<div class="tag-result" out:fade="{{duration: 500 }}" style="left: calc({positionLeft} - 65px); background-color:{backgrondColor}">
 		<span>Seu IMC</span>
 		<br>
 		<strong>{resultIMC}</strong>

@@ -14,7 +14,7 @@
 		ToastBody
 	} from 'sveltestrap';
 	
-	import { fly } from 'svelte/transition';
+	import { fly, fade } from 'svelte/transition';
     
 	export let optionsGender;
     export let personGender;
@@ -27,7 +27,6 @@
 	export let handleChangeWeight;
 	export let handleCalculateIMC;
 	export let idealWeight;
-	export let pristineField;
 
 </script>
 
@@ -67,7 +66,7 @@
 						bind:value={personAge}
 						required
 						on:change={handleChangeAge(personAge)}
-						class="{personAge === '' && pristineField == false ? 'has-error' : ''}"
+						class="{personAge === undefined || personAge === '' ? 'has-error' : ''}"
 					/>
 				</FormGroup>
 
@@ -83,7 +82,7 @@
 						bind:value={personHeight}
 						required
 						on:change={handleChangeHeight(personHeight)}
-						class="{personHeight === '' && pristineField == false ? 'has-error' : ''}"
+						class="{personHeight === undefined || personHeight === '' ? 'has-error' : ''}"
 					/>
 				</FormGroup>
 
@@ -99,17 +98,17 @@
 						bind:value={personWeight}
 						required
 						on:change={handleChangeWeight(personWeight)}
-						class="{personWeight === '' && pristineField == false ? 'has-error' : ''}"
+						class="{personWeight === undefined || personWeight === '' ? 'has-error' : ''}"
 					/>
 				</FormGroup>
 
-				<Button color="success" type="button" on:click={handleCalculateIMC}>
+				<Button color="success" block type="button" on:click={handleCalculateIMC}>
 					Calcular
 				</Button>
 			</Form>
 			{#if idealWeight}
 				<br/>
-				<div in:fly="{{duration: 500 }}">
+				<div in:fly="{{y: 50, duration: 500 }}" out:fly="{{y: 50, duration: 500 }}">
 					<Toast class="mr-1">
 						<ToastBody>
 							Faixa de peso ideal: <strong>{idealWeight.weight} kg</strong>
@@ -139,6 +138,10 @@
 		display: flex;
 	}
 
+	/* :global(button.btn) {
+		text-transform: uppercase;
+	} */
+
 	:global(.toast-body) {
 		font-size: 16px;
 		color: #333;
@@ -152,6 +155,18 @@
 		font-size: 18px;
 		color: #28a745;
 	}
+	
+	:global(:invalid) {
+		box-shadow: none;
+	}
+
+	:global(:-moz-submit-invalid) {
+		box-shadow: none;
+	}
+
+	:global(:-moz-ui-invalid) {
+		box-shadow:none;
+	}
 
 	:global(.form-control.has-error) {
 		border-color: red;
@@ -159,6 +174,7 @@
 
 	:global(.form-control.has-error::placeholder) {
 		color: red;
+		opacity: 1;
 	}
 
 	@media (min-width:320px) {

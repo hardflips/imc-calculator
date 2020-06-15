@@ -188,6 +188,7 @@
 <style>
 	:global(.scene) {
 		position: absolute;
+		height: 100%;
 	}
 </style>
 

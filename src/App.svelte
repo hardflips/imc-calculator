@@ -6,16 +6,15 @@
 
 	let scene;
 	let personGender = 'Mulher';
-	let personAge = '';
-	let personHeight = '';
-	let personWeight = '';
+	let personAge = null;
+	let personHeight = null;
+	let personWeight = null;
 	let resultIMC;
 	let positionLeft;
 	let backgrondColor;
 	let loadProgress = false;
 	let isLoading = false;
 	let idealWeight = null;
-	let pristineField = true;
 	
 	export let progressData;
 	export let idealWeightData;
@@ -26,7 +25,14 @@
 	];
 
 	const changeGender = (param) => {
-		personHeight = '';
+		personHeight = null;
+		personAge = null;
+		personWeight = null;
+		resultIMC = null;
+		idealWeight = null;
+		scene.children[4].children[2].material.color = {r: 0.5, g: 0.5, b: 0.5};
+		scene.children[5].children[1].material.color = {r: 0.5, g: 0.5, b: 0.5};
+		loadProgress = false;
 		personGender = param;
 		if (personGender == 'Mulher'){
 			scene.children[4].visible = true;
@@ -36,7 +42,6 @@
 			scene.children[4].visible = false;
 			scene.children[5].visible = true;
 		}
-		calculateIMC();
 	}
 
 	const changeAge = (param) => {
@@ -90,7 +95,6 @@
 
 	const calculateIMC = () => {
 		resultIMC = null;
-		pristineField = false;
 		if (personAge && personHeight && personWeight){
 			let heightFormated = personHeight.toString().replace(/(\d)(?=(\d{2})+(?!\d))/g, "$1.");
 			resultIMC = roundToTwo(personWeight / (parseFloat(heightFormated) * parseFloat(heightFormated)));
@@ -123,6 +127,17 @@
 					partialProgress('.progress-bar.override',progressData.obesity.range);
 					partialProgress('.progress-bar.obesity',progressData.override.range);
 				},500);
+			}
+		}
+		else {
+			if (personAge === null){
+				personAge = '';
+			}
+			if (personHeight === null){
+				personHeight = '';
+			}
+			if (personWeight === null){
+				personWeight = '';
 			}
 		}
 	}
@@ -213,7 +228,6 @@
 	handleChangeHeight={(param) => changeHeight(param)}
 	handleChangeWeight={(param) => changeWeight(param)}
 	handleCalculateIMC={() => calculateIMC()}
-	pristineField={pristineField}
 />
 
 <Result
