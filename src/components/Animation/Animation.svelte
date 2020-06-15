@@ -186,9 +186,15 @@
 </script>
 
 <style>
-	:global(.scene) {
-		position: absolute;
-		height: 100%;
+	@media (min-width:320px) {
+		:global(.scene) {
+			position: relative;
+		}
+	}
+	@media (min-width: 801px) {
+		:global(.scene) {
+			position: absolute;
+		}
 	}
 </style>
 

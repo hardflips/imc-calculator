@@ -2,7 +2,7 @@
 
 Desenvolvido em Svelte e Three.js
 
-<img src="https://i.imgur.com/cnpbcrD.jpg" width="300"/>
+<img src="https://i.imgur.com/cnpbcrD.jpg" width="524"/>
 
 ---
 

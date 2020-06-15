@@ -10,11 +10,12 @@
 	let personHeight = null;
 	let personWeight = null;
 	let resultIMC;
-	let positionLeft;
+	let positionTag;
 	let backgrondColor;
 	let loadProgress = false;
 	let isLoading = false;
 	let idealWeight = null;
+	let widthWindow = window.innerWidth;
 	
 	export let progressData;
 	export let idealWeightData;
@@ -23,6 +24,20 @@
 		'Mulher',
 		'Homem',
 	];
+
+	const onWindowResize = () => {
+		widthWindow = window.innerWidth;
+		personHeight = null;
+		personAge = null;
+		personWeight = null;
+		resultIMC = null;
+		idealWeight = null;
+		scene.children[4].children[2].material.color = {r: 0.5, g: 0.5, b: 0.5};
+		scene.children[5].children[1].material.color = {r: 0.5, g: 0.5, b: 0.5};
+		loadProgress = false;
+	}
+
+	window.addEventListener( 'resize', onWindowResize, false );
 
 	const changeGender = (param) => {
 		personHeight = null;
@@ -144,7 +159,7 @@
 
 	const calculateProgressTag = (resultIMC) => {
 		var item = resultIMC*10;
-		positionLeft = '0px';
+		positionTag = '0px';
 
 		if (resultIMC <= progressData.low.limit) {
 			backgrondColor = '#ffc107';
@@ -173,10 +188,21 @@
 		}
 
 		if (resultIMC >= progressData.morbid.limit){
-			positionLeft = '90%';
+			if (widthWindow <= 801){
+				positionTag = '90% - 36px';
+			}
+			else {
+				positionTag = '90%';
+			}
 		}
 		else {
-			positionLeft = document.querySelector('[data-item="'+item+'"]').getBoundingClientRect().left + window.scrollX + 'px';
+			if (widthWindow <= 801){
+				let parentOffset = document.querySelector('[data-item="'+item+'"]').offsetParent.offsetTop;
+				positionTag = (document.querySelector('[data-item="'+item+'"]').offsetTop + parentOffset) + 'px - 36px';
+			}
+			else {
+				positionTag = document.querySelector('[data-item="'+item+'"]').getBoundingClientRect().left + window.scrollX + 'px';
+			}
 		}
 	}
 
@@ -232,7 +258,7 @@
 
 <Result
 	resultIMC={resultIMC}
-	positionLeft={positionLeft}
+	positionTag={positionTag}
 	backgrondColor={backgrondColor}
 	loadProgress={loadProgress}
 />

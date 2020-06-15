@@ -138,10 +138,6 @@
 		display: flex;
 	}
 
-	/* :global(button.btn) {
-		text-transform: uppercase;
-	} */
-
 	:global(.toast-body) {
 		font-size: 16px;
 		color: #333;
@@ -179,12 +175,17 @@
 
 	@media (min-width:320px) {
 		:global(.wrapper) {
-			position: absolute;
+			position: relative;
 			width: 100%;
 			transition: all .5s ease-in-out;
 			box-shadow: 0 0 8px rgba(0,0,0, .25);
 			bottom: 0;
-			top: 60%;
+			top: -50%;
+		}
+		:global(.toast){
+			width: 100%;
+			max-width: 100%;
+			text-align: center;
 		}
 	}
 
@@ -194,6 +195,7 @@
 
 	@media (min-width: 801px) {
 		:global(.wrapper) {
+			position: absolute;
 			right: 5%;
 			top: 10%;
 			bottom: auto;
