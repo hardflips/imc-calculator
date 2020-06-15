@@ -27,14 +27,16 @@
 
 	const onWindowResize = () => {
 		widthWindow = window.innerWidth;
-		personHeight = null;
-		personAge = null;
-		personWeight = null;
-		resultIMC = null;
-		idealWeight = null;
-		scene.children[4].children[2].material.color = {r: 0.5, g: 0.5, b: 0.5};
-		scene.children[5].children[1].material.color = {r: 0.5, g: 0.5, b: 0.5};
-		loadProgress = false;
+		if (widthWindow >= 801){
+			personHeight = null;
+			personAge = null;
+			personWeight = null;
+			resultIMC = null;
+			idealWeight = null;
+			scene.children[4].children[2].material.color = {r: 0.5, g: 0.5, b: 0.5};
+			scene.children[5].children[1].material.color = {r: 0.5, g: 0.5, b: 0.5};
+			loadProgress = false;
+		}
 	}
 
 	window.addEventListener( 'resize', onWindowResize, false );

@@ -68433,14 +68433,17 @@ vec4 envMapTexelToLinear(vec4 color) {
 
     	const onWindowResize = () => {
     		widthWindow = window.innerWidth;
-    		$$invalidate(3, personHeight = null);
-    		$$invalidate(2, personAge = null);
-    		$$invalidate(4, personWeight = null);
-    		$$invalidate(5, resultIMC = null);
-    		$$invalidate(10, idealWeight = null);
-    		$$invalidate(0, scene.children[4].children[2].material.color = { r: 0.5, g: 0.5, b: 0.5 }, scene);
-    		$$invalidate(0, scene.children[5].children[1].material.color = { r: 0.5, g: 0.5, b: 0.5 }, scene);
-    		$$invalidate(8, loadProgress = false);
+
+    		if (widthWindow >= 801) {
+    			$$invalidate(3, personHeight = null);
+    			$$invalidate(2, personAge = null);
+    			$$invalidate(4, personWeight = null);
+    			$$invalidate(5, resultIMC = null);
+    			$$invalidate(10, idealWeight = null);
+    			$$invalidate(0, scene.children[4].children[2].material.color = { r: 0.5, g: 0.5, b: 0.5 }, scene);
+    			$$invalidate(0, scene.children[5].children[1].material.color = { r: 0.5, g: 0.5, b: 0.5 }, scene);
+    			$$invalidate(8, loadProgress = false);
+    		}
     	};
 
     	window.addEventListener("resize", onWindowResize, false);
