@@ -1,1 +1,1 @@
-*.gs linguist-language=Svelte
+*.svelte linguist-language=Svelte
