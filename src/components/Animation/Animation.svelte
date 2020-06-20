@@ -198,11 +198,12 @@
 		:global(.scene) {
 			position: relative;
 			top: 320px;
+			display: flex;
+			box-shadow: 0 0 8px rgba(0,0,0, .25);
 		}
 	}
 	@media (min-width: 801px) {
 		:global(.scene) {
-			position: absolute;
 			top: 0;
 		}
 	}

@@ -28,7 +28,7 @@
 
 </script>
 
-<div class="wrapper">
+<section id="calculator" class="wrapper">
 	<Card color="dark" inverse>
 		<CardHeader>
 			<CardTitle>Calculadora de IMC</CardTitle>
@@ -102,7 +102,7 @@
 
 		</CardBody>
 	</Card>
-</div>
+</section>
 
 <style>
 	:global(.card-title) {
@@ -182,22 +182,22 @@
 	@media (min-width: 801px) {
 		:global(.wrapper) {
 			position: absolute;
-			right: 5%;
-			top: 10%;
+			right: 10%;
+			top: 15%;
 			bottom: auto;
-			width: 400px;
+			width: 320px;
 		}
 	}
 
 	@media (min-width:1025px) {
 		:global(.wrapper) {
-			right: 15%;
+			right: 20%;
 		}
 	}
 
 	@media (min-width: 1441px) {
 		:global(.wrapper) {
-			right: 25%;
+			right: 30%;
 			top: 240px;
 		}
 	}

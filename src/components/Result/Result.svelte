@@ -17,7 +17,7 @@
 </script>
 
 {#if loadProgress}
-	<div id="result" class="progress-wrapper" in:fade="{{duration: 500 }}" out:fade="{{duration: 500 }}">
+	<section id="result" class="progress-wrapper" in:fade="{{duration: 500 }}" out:fade="{{duration: 500 }}">
 		<Progress multi>
 			<Progress bar color="low" value="{widthWindow <= 801 ? '100' : '20'}" class="low">
 				<span>Abaixo do peso <br><small>0,0 - 18,4</small></span>
@@ -45,7 +45,7 @@
 				<div class="arrow-down" style="border-top-color:{widthWindow <= 801 ? '#333' : backgrondColor}"></div>
 			</div>
 		{/if}
-	</div>
+	</section>
 {/if}
 
 
@@ -53,8 +53,6 @@
     :global(.progress) {
 		width: 100%;
 		height: 100%;
-		bottom: 0;
-		position: fixed;
 		overflow: visible;
 	}
 
@@ -123,7 +121,6 @@
 	}
 
     .tag-result {
-		position: fixed;
 		height: 72px;
 		padding: 8px;
 		background-color: #8bc34a;
@@ -155,13 +152,14 @@
 
 	@media (min-width:320px) {
 		:global(.progress) {
-			flex-direction: column;
 			position: relative;
+			flex-direction: column;
 			height: auto;
 		}
 		.progress-wrapper {
 			position: relative;
 			top: 290px;
+			z-index: 1;
 		}
 		:global(.progress-bar) {
 			height: 100px;
@@ -211,8 +209,9 @@
 
 	@media (min-width: 801px) {
 		:global(.progress) {
-			position: fixed;
+			position: absolute;
 			flex-direction: row;
+			bottom: 0;
 		}
 		.progress-wrapper {
 			position: relative;
@@ -244,7 +243,7 @@
 			width: 8.9%;
 		}
 		.tag-result {
-			position: fixed;
+			position: absolute;
 			border: none;
 			color: white;
 			width: 130px;

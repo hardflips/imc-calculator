@@ -2,6 +2,7 @@
 	import Animation from './components/Animation/Animation.svelte';
 	import Calculator from './components/Calculator/Calculator.svelte';
 	import Result from './components/Result/Result.svelte';
+	import Infos from './components/Infos/Infos.svelte';
 	import Loading from './components/shared/Loading.svelte';
 
 	let scene,
@@ -121,7 +122,9 @@
 				if (resultIMC){
 					calculateProgressTag(resultIMC);
 					let result = document.getElementById('result');
-					scrollIt(result);
+					if (widthWindow <= 800){
+						scrollIt(result);
+					}
 					hideKeyboard();
 					isLoading = false;
 				}
@@ -266,6 +269,8 @@
 	backgrondColor={backgrondColor}
 	loadProgress={loadProgress}
 />
+
+<Infos />
 
 
 <Loading
