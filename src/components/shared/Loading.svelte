@@ -18,7 +18,7 @@
 		background-color: rgba(255,255,255, .5);
 		left: 0;
 		top: 0;
-		z-index: 99;
+		z-index: 999;
 		display: flex;
 		align-items: center;
 		justify-content: center;

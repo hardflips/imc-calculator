@@ -18,11 +18,9 @@
     
 	export let optionsGender;
     export let personGender;
-    export let personAge;
     export let personHeight;
 	export let personWeight;
 	export let handleChangeGender;
-	export let handleChangeAge;
 	export let handleChangeHeight;
 	export let handleChangeWeight;
 	export let handleCalculateIMC;
@@ -37,6 +35,7 @@
 		</CardHeader>
 		<CardBody>
 			<Form id="calculator" on:submit={e => e.preventDefault()}>
+			
 				<div class="radio-group">
 					{#each optionsGender as value}
 						<FormGroup>
@@ -53,22 +52,6 @@
 						</FormGroup>
 					{/each}
 				</div>
-				
-				<FormGroup>
-					<Label for="ageInput">Idade:</Label>
-					<Input
-						type="number"
-						name="age"
-						id="ageInput"
-						placeholder="Digite sua idade"
-						minlength="1"
-						maxlength="3"
-						bind:value={personAge}
-						required
-						on:change={handleChangeAge(personAge)}
-						class="{personAge === undefined || personAge === '' ? 'has-error' : ''}"
-					/>
-				</FormGroup>
 
 				<FormGroup>
 					<Label for="heightInput">Altura:</Label>
@@ -175,12 +158,15 @@
 
 	@media (min-width:320px) {
 		:global(.wrapper) {
-			position: relative;
+			position: absolute;
 			width: 100%;
+			min-height: 349px;
+			max-height: 0;
 			transition: all .5s ease-in-out;
 			box-shadow: 0 0 8px rgba(0,0,0, .25);
 			bottom: 0;
-			top: -50%;
+			top: 0;
+			z-index: 99;
 		}
 		:global(.toast){
 			width: 100%;

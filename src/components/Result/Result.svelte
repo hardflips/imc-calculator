@@ -17,7 +17,7 @@
 </script>
 
 {#if loadProgress}
-	<div class="progress-wrapper" in:fade="{{duration: 500 }}" out:fade="{{duration: 500 }}">
+	<div id="result" class="progress-wrapper" in:fade="{{duration: 500 }}" out:fade="{{duration: 500 }}">
 		<Progress multi>
 			<Progress bar color="low" value="{widthWindow <= 801 ? '100' : '20'}" class="low">
 				<span>Abaixo do peso <br><small>0,0 - 18,4</small></span>
@@ -161,7 +161,7 @@
 		}
 		.progress-wrapper {
 			position: relative;
-			top: -50%;
+			top: 290px;
 		}
 		:global(.progress-bar) {
 			height: 100px;
