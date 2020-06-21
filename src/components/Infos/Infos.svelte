@@ -120,7 +120,7 @@
                         </Badge>
                     </div>
                 </h3>
-                <p>A melhor maneira de perder peso se você pra você é através de uma combinação de <strong>dieta</strong>, <strong>exercício</strong> e em alguns casos até medicamentos.<br>Para obter ajuda e conselhos, consulte um <strong>clínico geral</strong>.
+                <p>A melhor maneira de perder peso se você pra você é através de uma combinação de <strong>dieta</strong>, <strong>exercício</strong> e em alguns casos até medicamentos.<br>Para obter ajuda e conselhos, consulte um <strong>médico</strong>.
                 </p>
             </Col>
             <Col lg="6">
@@ -134,7 +134,7 @@
                                             <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480     C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z"/>
                                             <path d="M222.72,214.08c2.465-5.99,1.075-12.875-3.52-17.44l-64-64l-22.56,22.72l36.8,36.64H128v32h80     C214.459,223.968,220.266,220.055,222.72,214.08z"/>
                                             <path d="M379.36,155.36l-22.72-22.72l-64,64c-6.274,6.223-6.316,16.353-0.093,22.627c3.027,3.052,7.155,4.758,11.453,4.733h80     v-32h-41.44L379.36,155.36z"/>
-                                            <polygon points="292.64,276.64 256,313.44 219.36,276.64 196.64,299.36 233.44,336 196.64,372.64 219.36,395.36 256,358.56      292.64,395.36 315.36,372.64 278.56,336 315.36,299.36    "/>
+                                            <path d="M313.92,307.04l-35.52,25.28l-35.52-25.28c-5.555-3.955-13.005-3.955-18.56,0l-35.52,25.28l-35.52-25.28l-18.56,25.92     l44.8,32c5.555,3.955,13.005,3.955,18.56,0l35.52-25.28l35.52,25.28c5.555,3.955,13.005,3.955,18.56,0l35.52-25.44l35.52,25.44     l18.56-26.08l-44.8-32C326.891,302.973,319.44,303.037,313.92,307.04z"/>
                                         </g>
                                     </g>
                                 </g>
@@ -142,8 +142,7 @@
                         </Badge>
                     </div>
                 </h3>
-                <p>A melhor maneira de perder peso se você pra você é através de uma combinação de <strong>dieta</strong>, <strong>exercício</strong> e em alguns casos até medicamentos.<br>Para obter ajuda e conselhos, consulte um <strong>clínico geral</strong>.
-                </p>
+                <p>Procure um médico ou nutricionista para ajudá-lo. Para perder peso, você deve reduzir o número de calorias consumidas. Comece acompanhando tudo o que você come. Considere adicionar atividade física depois de atingir um objetivo mínimo de 10% de perda de peso.</p>
             </Col>
         </Row>
         <Row>

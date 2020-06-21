@@ -71412,7 +71412,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			br = element("br");
     			t7 = text("Para obter ajuda e conselhos, consulte um ");
     			strong2 = element("strong");
-    			strong2.textContent = "clínico geral";
+    			strong2.textContent = "médico";
     			t9 = text(".");
     			attr_dev(div, "class", "wrapper-badge obesity-bg-color svelte-1hxx8iy");
     			add_location(div, file$p, 105, 20, 5857);
@@ -71488,7 +71488,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     	let path0;
     	let path1;
     	let path2;
-    	let polygon;
+    	let path3;
 
     	const block = {
     		c: function create() {
@@ -71499,18 +71499,18 @@ vec4 envMapTexelToLinear(vec4 color) {
     			path0 = svg_element("path");
     			path1 = svg_element("path");
     			path2 = svg_element("path");
-    			polygon = svg_element("polygon");
+    			path3 = svg_element("path");
     			attr_dev(path0, "d", "M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480     C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z");
-    			add_location(path0, file$p, 133, 44, 8166);
+    			add_location(path0, file$p, 133, 44, 8159);
     			attr_dev(path1, "d", "M222.72,214.08c2.465-5.99,1.075-12.875-3.52-17.44l-64-64l-22.56,22.72l36.8,36.64H128v32h80     C214.459,223.968,220.266,220.055,222.72,214.08z");
-    			add_location(path1, file$p, 134, 44, 8416);
+    			add_location(path1, file$p, 134, 44, 8409);
     			attr_dev(path2, "d", "M379.36,155.36l-22.72-22.72l-64,64c-6.274,6.223-6.316,16.353-0.093,22.627c3.027,3.052,7.155,4.758,11.453,4.733h80     v-32h-41.44L379.36,155.36z");
-    			add_location(path2, file$p, 135, 44, 8616);
-    			attr_dev(polygon, "points", "292.64,276.64 256,313.44 219.36,276.64 196.64,299.36 233.44,336 196.64,372.64 219.36,395.36 256,358.56      292.64,395.36 315.36,372.64 278.56,336 315.36,299.36    ");
-    			add_location(polygon, file$p, 136, 44, 8818);
-    			add_location(g0, file$p, 132, 40, 8117);
-    			add_location(g1, file$p, 131, 36, 8072);
-    			add_location(g2, file$p, 130, 32, 8031);
+    			add_location(path2, file$p, 135, 44, 8609);
+    			attr_dev(path3, "d", "M313.92,307.04l-35.52,25.28l-35.52-25.28c-5.555-3.955-13.005-3.955-18.56,0l-35.52,25.28l-35.52-25.28l-18.56,25.92     l44.8,32c5.555,3.955,13.005,3.955,18.56,0l35.52-25.28l35.52,25.28c5.555,3.955,13.005,3.955,18.56,0l35.52-25.44l35.52,25.44     l18.56-26.08l-44.8-32C326.891,302.973,319.44,303.037,313.92,307.04z");
+    			add_location(path3, file$p, 136, 44, 8811);
+    			add_location(g0, file$p, 132, 40, 8110);
+    			add_location(g1, file$p, 131, 36, 8065);
+    			add_location(g2, file$p, 130, 32, 8024);
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "xmlns:xlink", "http://www.w3.org/1999/xlink");
     			attr_dev(svg, "version", "1.1");
@@ -71520,7 +71520,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			attr_dev(svg, "viewBox", "0 0 512 512");
     			set_style(svg, "enable-background", "new 0 0 512 512");
     			attr_dev(svg, "xml:space", "preserve");
-    			add_location(svg, file$p, 129, 28, 7786);
+    			add_location(svg, file$p, 129, 28, 7779);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -71530,7 +71530,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			append_dev(g0, path0);
     			append_dev(g0, path1);
     			append_dev(g0, path2);
-    			append_dev(g0, polygon);
+    			append_dev(g0, path3);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(svg);
@@ -71555,15 +71555,6 @@ vec4 envMapTexelToLinear(vec4 color) {
     	let div;
     	let t1;
     	let p;
-    	let t2;
-    	let strong0;
-    	let t4;
-    	let strong1;
-    	let t6;
-    	let br;
-    	let t7;
-    	let strong2;
-    	let t9;
     	let current;
 
     	const badge = new Badge({
@@ -71582,27 +71573,12 @@ vec4 envMapTexelToLinear(vec4 color) {
     			create_component(badge.$$.fragment);
     			t1 = space();
     			p = element("p");
-    			t2 = text("A melhor maneira de perder peso se você pra você é através de uma combinação de ");
-    			strong0 = element("strong");
-    			strong0.textContent = "dieta";
-    			t4 = text(", ");
-    			strong1 = element("strong");
-    			strong1.textContent = "exercício";
-    			t6 = text(" e em alguns casos até medicamentos.");
-    			br = element("br");
-    			t7 = text("Para obter ajuda e conselhos, consulte um ");
-    			strong2 = element("strong");
-    			strong2.textContent = "clínico geral";
-    			t9 = text(".");
+    			p.textContent = "Procure um médico ou nutricionista para ajudá-lo. Para perder peso, você deve reduzir o número de calorias consumidas. Comece acompanhando tudo o que você come. Considere adicionar atividade física depois de atingir um objetivo mínimo de 10% de perda de peso.";
     			attr_dev(div, "class", "wrapper-badge morbid-bg-color svelte-1hxx8iy");
-    			add_location(div, file$p, 127, 20, 7680);
+    			add_location(div, file$p, 127, 20, 7673);
     			attr_dev(h3, "class", "subtitle svelte-1hxx8iy");
-    			add_location(h3, file$p, 126, 16, 7624);
-    			add_location(strong0, file$p, 144, 99, 9350);
-    			add_location(strong1, file$p, 144, 123, 9374);
-    			add_location(br, file$p, 144, 185, 9436);
-    			add_location(strong2, file$p, 144, 231, 9482);
-    			add_location(p, file$p, 144, 16, 9267);
+    			add_location(h3, file$p, 126, 16, 7617);
+    			add_location(p, file$p, 144, 16, 9400);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -71611,15 +71587,6 @@ vec4 envMapTexelToLinear(vec4 color) {
     			mount_component(badge, div, null);
     			insert_dev(target, t1, anchor);
     			insert_dev(target, p, anchor);
-    			append_dev(p, t2);
-    			append_dev(p, strong0);
-    			append_dev(p, t4);
-    			append_dev(p, strong1);
-    			append_dev(p, t6);
-    			append_dev(p, br);
-    			append_dev(p, t7);
-    			append_dev(p, strong2);
-    			append_dev(p, t9);
     			current = true;
     		},
     		p: function update(ctx, dirty) {
@@ -71764,7 +71731,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     	return block;
     }
 
-    // (150:12) <Col lg="12">
+    // (149:12) <Col lg="12">
     function create_default_slot_17(ctx) {
     	let h3;
     	let t1;
@@ -71777,8 +71744,8 @@ vec4 envMapTexelToLinear(vec4 color) {
     			t1 = space();
     			p = element("p");
     			p.textContent = "Seu IMC pode dizer se você está carregando muito peso, mas fique atento, ela não pode te dizer se você está carregando muita gordura.";
-    			add_location(h3, file$p, 150, 16, 9631);
-    			add_location(p, file$p, 151, 16, 9665);
+    			add_location(h3, file$p, 149, 16, 9762);
+    			add_location(p, file$p, 150, 16, 9796);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -71796,14 +71763,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_17.name,
     		type: "slot",
-    		source: "(150:12) <Col lg=\\\"12\\\">",
+    		source: "(149:12) <Col lg=\\\"12\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (149:8) <Row>
+    // (148:8) <Row>
     function create_default_slot_16(ctx) {
     	let current;
 
@@ -71851,14 +71818,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_16.name,
     		type: "slot",
-    		source: "(149:8) <Row>",
+    		source: "(148:8) <Row>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (159:16) <Alert color="info">
+    // (158:16) <Alert color="info">
     function create_default_slot_15(ctx) {
     	let h4;
     	let t1;
@@ -71869,7 +71836,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			h4.textContent = "Distinção";
     			t1 = text("\r\n                    O IMC não mostra a diferença entre excesso de gordura, músculo ou osso.");
     			attr_dev(h4, "class", "alert-heading text-capitalize");
-    			add_location(h4, file$p, 159, 20, 9982);
+    			add_location(h4, file$p, 158, 20, 10113);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -71885,14 +71852,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_15.name,
     		type: "slot",
-    		source: "(159:16) <Alert color=\\\"info\\\">",
+    		source: "(158:16) <Alert color=\\\"info\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (158:12) <Col lg="6">
+    // (157:12) <Col lg="6">
     function create_default_slot_14(ctx) {
     	let current;
 
@@ -71940,14 +71907,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_14.name,
     		type: "slot",
-    		source: "(158:12) <Col lg=\\\"6\\\">",
+    		source: "(157:12) <Col lg=\\\"6\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (165:16) <Alert color="warning">
+    // (164:16) <Alert color="warning">
     function create_default_slot_13$1(ctx) {
     	let h4;
     	let t1;
@@ -71958,7 +71925,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			h4.textContent = "Aplicação";
     			t1 = text("\r\n                    O IMC adulto não leva em consideração idade, sexo ou massa muscular.");
     			attr_dev(h4, "class", "alert-heading text-capitalize");
-    			add_location(h4, file$p, 165, 20, 10266);
+    			add_location(h4, file$p, 164, 20, 10397);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -71974,14 +71941,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_13$1.name,
     		type: "slot",
-    		source: "(165:16) <Alert color=\\\"warning\\\">",
+    		source: "(164:16) <Alert color=\\\"warning\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (164:12) <Col lg="6">
+    // (163:12) <Col lg="6">
     function create_default_slot_12$1(ctx) {
     	let current;
 
@@ -72029,14 +71996,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_12$1.name,
     		type: "slot",
-    		source: "(164:12) <Col lg=\\\"6\\\">",
+    		source: "(163:12) <Col lg=\\\"6\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (157:8) <Row>
+    // (156:8) <Row>
     function create_default_slot_11$1(ctx) {
     	let t;
     	let current;
@@ -72109,14 +72076,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_11$1.name,
     		type: "slot",
-    		source: "(157:8) <Row>",
+    		source: "(156:8) <Row>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (175:24) <CardTitle>
+    // (174:24) <CardTitle>
     function create_default_slot_10$1(ctx) {
     	let t;
 
@@ -72136,14 +72103,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_10$1.name,
     		type: "slot",
-    		source: "(175:24) <CardTitle>",
+    		source: "(174:24) <CardTitle>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (174:20) <CardHeader>
+    // (173:20) <CardHeader>
     function create_default_slot_9$1(ctx) {
     	let current;
 
@@ -72190,14 +72157,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_9$1.name,
     		type: "slot",
-    		source: "(174:20) <CardHeader>",
+    		source: "(173:20) <CardHeader>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (179:28) <ListGroupItem>
+    // (178:28) <ListGroupItem>
     function create_default_slot_8$1(ctx) {
     	let strong;
     	let t1;
@@ -72207,7 +72174,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			strong = element("strong");
     			strong.textContent = "01";
     			t1 = text(" - Adultos e atletas musculosos podem ser classificados como \"acima do peso\" ou \"obesos\", embora a gordura corporal seja baixa.");
-    			add_location(strong, file$p, 178, 43, 10783);
+    			add_location(strong, file$p, 177, 43, 10914);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, strong, anchor);
@@ -72223,14 +72190,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_8$1.name,
     		type: "slot",
-    		source: "(179:28) <ListGroupItem>",
+    		source: "(178:28) <ListGroupItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (180:28) <ListGroupItem>
+    // (179:28) <ListGroupItem>
     function create_default_slot_7$1(ctx) {
     	let strong;
     	let t1;
@@ -72240,7 +72207,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			strong = element("strong");
     			strong.textContent = "02";
     			t1 = text(" - Os adultos que perdem músculos à medida que envelhecem podem cair na faixa de \"peso saudável\", embora possam estar carregando excesso de gordura.");
-    			add_location(strong, file$p, 179, 43, 10990);
+    			add_location(strong, file$p, 178, 43, 11121);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, strong, anchor);
@@ -72256,14 +72223,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_7$1.name,
     		type: "slot",
-    		source: "(180:28) <ListGroupItem>",
+    		source: "(179:28) <ListGroupItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (181:28) <ListGroupItem>
+    // (180:28) <ListGroupItem>
     function create_default_slot_6$1(ctx) {
     	let strong;
     	let t1;
@@ -72273,7 +72240,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			strong = element("strong");
     			strong.textContent = "03";
     			t1 = text(" - A gravidez também afeta o resultado do IMC da mulher. Você deve usar seu peso antes da gravidez ao calcular seu IMC.");
-    			add_location(strong, file$p, 180, 43, 11218);
+    			add_location(strong, file$p, 179, 43, 11349);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, strong, anchor);
@@ -72289,14 +72256,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_6$1.name,
     		type: "slot",
-    		source: "(181:28) <ListGroupItem>",
+    		source: "(180:28) <ListGroupItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (178:24) <ListGroup>
+    // (177:24) <ListGroup>
     function create_default_slot_5$2(ctx) {
     	let t0;
     	let t1;
@@ -72391,14 +72358,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_5$2.name,
     		type: "slot",
-    		source: "(178:24) <ListGroup>",
+    		source: "(177:24) <ListGroup>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (177:20) <CardBody>
+    // (176:20) <CardBody>
     function create_default_slot_4$2(ctx) {
     	let current;
 
@@ -72445,14 +72412,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_4$2.name,
     		type: "slot",
-    		source: "(177:20) <CardBody>",
+    		source: "(176:20) <CardBody>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (173:16) <Card>
+    // (172:16) <Card>
     function create_default_slot_3$2(ctx) {
     	let t;
     	let current;
@@ -72523,14 +72490,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_3$2.name,
     		type: "slot",
-    		source: "(173:16) <Card>",
+    		source: "(172:16) <Card>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (172:12) <Col lg="12">
+    // (171:12) <Col lg="12">
     function create_default_slot_2$2(ctx) {
     	let current;
 
@@ -72577,14 +72544,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_2$2.name,
     		type: "slot",
-    		source: "(172:12) <Col lg=\\\"12\\\">",
+    		source: "(171:12) <Col lg=\\\"12\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (171:8) <Row>
+    // (170:8) <Row>
     function create_default_slot_1$2(ctx) {
     	let current;
 
@@ -72632,7 +72599,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_1$2.name,
     		type: "slot",
-    		source: "(171:8) <Row>",
+    		source: "(170:8) <Row>",
     		ctx
     	});
 
