@@ -19,7 +19,7 @@
 
 	const init = () => {
 
-		container = document.createElement('div');
+		container = document.createElement('header');
 		container.setAttribute('class', 'scene');
 		document.body.appendChild(container);
 

@@ -58386,7 +58386,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     	let { handleGetAnimationScene } = $$props;
 
     	const init = () => {
-    		container = document.createElement("div");
+    		container = document.createElement("header");
     		container.setAttribute("class", "scene");
     		document.body.appendChild(container);
     		camera = new PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 2000);
@@ -68389,19 +68389,21 @@ vec4 envMapTexelToLinear(vec4 color) {
     	return child_ctx;
     }
 
-    // (34:3) <CardTitle>
+    // (35:3) <CardTitle>
     function create_default_slot_13(ctx) {
-    	let t;
+    	let h2;
 
     	const block = {
     		c: function create() {
-    			t = text("Calculadora de IMC");
+    			h2 = element("h2");
+    			h2.textContent = "Calculadora de IMC";
+    			add_location(h2, file$n, 35, 4, 760);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
+    			insert_dev(target, h2, anchor);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(h2);
     		}
     	};
 
@@ -68409,14 +68411,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_13.name,
     		type: "slot",
-    		source: "(34:3) <CardTitle>",
+    		source: "(35:3) <CardTitle>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (33:2) <CardHeader>
+    // (34:2) <CardHeader>
     function create_default_slot_12(ctx) {
     	let current;
 
@@ -68463,14 +68465,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_12.name,
     		type: "slot",
-    		source: "(33:2) <CardHeader>",
+    		source: "(34:2) <CardHeader>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (42:7) <Label>
+    // (45:7) <Label>
     function create_default_slot_11(ctx) {
     	let input;
     	let input_value_value;
@@ -68490,7 +68492,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			input.value = input.__value;
     			input.required = true;
     			/*$$binding_groups*/ ctx[10][0].push(input);
-    			add_location(input, file$n, 42, 8, 937);
+    			add_location(input, file$n, 45, 8, 1016);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, input, anchor);
@@ -68545,14 +68547,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_11.name,
     		type: "slot",
-    		source: "(42:7) <Label>",
+    		source: "(45:7) <Label>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (41:6) <FormGroup>
+    // (44:6) <FormGroup>
     function create_default_slot_10(ctx) {
     	let t;
     	let current;
@@ -68603,14 +68605,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_10.name,
     		type: "slot",
-    		source: "(41:6) <FormGroup>",
+    		source: "(44:6) <FormGroup>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (40:5) {#each optionsGender as value}
+    // (43:5) {#each optionsGender as value}
     function create_each_block(ctx) {
     	let current;
 
@@ -68657,14 +68659,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(40:5) {#each optionsGender as value}",
+    		source: "(43:5) {#each optionsGender as value}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (57:5) <Label for="heightInput">
+    // (60:5) <Label for="heightInput">
     function create_default_slot_9(ctx) {
     	let t;
 
@@ -68684,14 +68686,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_9.name,
     		type: "slot",
-    		source: "(57:5) <Label for=\\\"heightInput\\\">",
+    		source: "(60:5) <Label for=\\\"heightInput\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (56:4) <FormGroup>
+    // (59:4) <FormGroup>
     function create_default_slot_8(ctx) {
     	let t;
     	let updating_value;
@@ -68791,14 +68793,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_8.name,
     		type: "slot",
-    		source: "(56:4) <FormGroup>",
+    		source: "(59:4) <FormGroup>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (73:5) <Label for="weightInput">
+    // (76:5) <Label for="weightInput">
     function create_default_slot_7(ctx) {
     	let t;
 
@@ -68818,14 +68820,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_7.name,
     		type: "slot",
-    		source: "(73:5) <Label for=\\\"weightInput\\\">",
+    		source: "(76:5) <Label for=\\\"weightInput\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (72:4) <FormGroup>
+    // (75:4) <FormGroup>
     function create_default_slot_6(ctx) {
     	let t;
     	let updating_value;
@@ -68925,14 +68927,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_6.name,
     		type: "slot",
-    		source: "(72:4) <FormGroup>",
+    		source: "(75:4) <FormGroup>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (88:4) <Button color="success" block type="button" on:click={handleCalculateIMC}>
+    // (91:4) <Button color="success" block type="button" on:click={handleCalculateIMC}>
     function create_default_slot_5(ctx) {
     	let t;
 
@@ -68952,14 +68954,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_5.name,
     		type: "slot",
-    		source: "(88:4) <Button color=\\\"success\\\" block type=\\\"button\\\" on:click={handleCalculateIMC}>",
+    		source: "(91:4) <Button color=\\\"success\\\" block type=\\\"button\\\" on:click={handleCalculateIMC}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (37:3) <Form id="calculator" on:submit={e => e.preventDefault()}>
+    // (40:3) <Form id="calculator" on:submit={e => e.preventDefault()}>
     function create_default_slot_4(ctx) {
     	let div;
     	let t0;
@@ -69023,8 +69025,8 @@ vec4 envMapTexelToLinear(vec4 color) {
     			create_component(formgroup1.$$.fragment);
     			t2 = space();
     			create_component(button.$$.fragment);
-    			attr_dev(div, "class", "radio-group svelte-1dwae6u");
-    			add_location(div, file$n, 38, 4, 830);
+    			attr_dev(div, "class", "radio-group svelte-4quha3");
+    			add_location(div, file$n, 41, 4, 909);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -69134,14 +69136,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(37:3) <Form id=\\\"calculator\\\" on:submit={e => e.preventDefault()}>",
+    		source: "(40:3) <Form id=\\\"calculator\\\" on:submit={e => e.preventDefault()}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (92:3) {#if idealWeight}
+    // (95:3) {#if idealWeight}
     function create_if_block$b(ctx) {
     	let br;
     	let t;
@@ -69165,8 +69167,8 @@ vec4 envMapTexelToLinear(vec4 color) {
     			t = space();
     			div = element("div");
     			create_component(toast.$$.fragment);
-    			add_location(br, file$n, 92, 4, 2242);
-    			add_location(div, file$n, 93, 4, 2253);
+    			add_location(br, file$n, 95, 4, 2321);
+    			add_location(div, file$n, 96, 4, 2332);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, br, anchor);
@@ -69215,14 +69217,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_if_block$b.name,
     		type: "if",
-    		source: "(92:3) {#if idealWeight}",
+    		source: "(95:3) {#if idealWeight}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (96:6) <ToastBody>
+    // (99:6) <ToastBody>
     function create_default_slot_3(ctx) {
     	let t0;
     	let strong;
@@ -69236,7 +69238,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			strong = element("strong");
     			t1 = text(t1_value);
     			t2 = text(" kg");
-    			add_location(strong, file$n, 96, 28, 2405);
+    			add_location(strong, file$n, 99, 28, 2484);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -69257,14 +69259,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(96:6) <ToastBody>",
+    		source: "(99:6) <ToastBody>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (95:5) <Toast class="mr-1">
+    // (98:5) <Toast class="mr-1">
     function create_default_slot_2(ctx) {
     	let current;
 
@@ -69311,14 +69313,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(95:5) <Toast class=\\\"mr-1\\\">",
+    		source: "(98:5) <Toast class=\\\"mr-1\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (36:2) <CardBody>
+    // (39:2) <CardBody>
     function create_default_slot_1(ctx) {
     	let t;
     	let if_block_anchor;
@@ -69405,14 +69407,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(36:2) <CardBody>",
+    		source: "(39:2) <CardBody>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (32:1) <Card color="dark" inverse>
+    // (33:1) <Card color="dark" inverse>
     function create_default_slot(ctx) {
     	let t;
     	let current;
@@ -69483,7 +69485,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(32:1) <Card color=\\\"dark\\\" inverse>",
+    		source: "(33:1) <Card color=\\\"dark\\\" inverse>",
     		ctx
     	});
 
@@ -69492,6 +69494,8 @@ vec4 envMapTexelToLinear(vec4 color) {
 
     function create_fragment$o(ctx) {
     	let section;
+    	let h1;
+    	let t1;
     	let current;
 
     	const card = new Card({
@@ -69507,7 +69511,12 @@ vec4 envMapTexelToLinear(vec4 color) {
     	const block = {
     		c: function create() {
     			section = element("section");
+    			h1 = element("h1");
+    			h1.textContent = "Peso ideal - Calculadora IMC";
+    			t1 = space();
     			create_component(card.$$.fragment);
+    			attr_dev(h1, "class", "page-title svelte-4quha3");
+    			add_location(h1, file$n, 31, 1, 636);
     			attr_dev(section, "id", "calculator");
     			attr_dev(section, "class", "wrapper");
     			add_location(section, file$n, 30, 0, 592);
@@ -69517,6 +69526,8 @@ vec4 envMapTexelToLinear(vec4 color) {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, section, anchor);
+    			append_dev(section, h1);
+    			append_dev(section, t1);
     			mount_component(card, section, null);
     			current = true;
     		},

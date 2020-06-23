@@ -29,9 +29,12 @@
 </script>
 
 <section id="calculator" class="wrapper">
+	<h1 class="page-title">Peso ideal - Calculadora IMC</h1>
 	<Card color="dark" inverse>
 		<CardHeader>
-			<CardTitle>Calculadora de IMC</CardTitle>
+			<CardTitle>
+				<h2>Calculadora de IMC</h2>
+			</CardTitle>
 		</CardHeader>
 		<CardBody>
 			<Form id="calculator" on:submit={e => e.preventDefault()}>
@@ -105,7 +108,15 @@
 </section>
 
 <style>
+	:global(.card-header) {
+		background-color: rgba(0, 0, 0, .2);
+	}
 	:global(.card-title) {
+		margin-bottom: 0;
+	}
+
+	:global(.card-title h2) {
+		font-size: 18px;
 		margin-bottom: 0;
 	}
 
@@ -154,6 +165,15 @@
 	:global(.form-control.has-error::placeholder) {
 		color: red;
 		opacity: 1;
+	}
+	
+	.page-title {
+		overflow: hidden;
+		width: 0;
+		height: 0;
+		padding: 0;
+		margin: 0;
+		display: block;
 	}
 
 	@media (min-width:320px) {
