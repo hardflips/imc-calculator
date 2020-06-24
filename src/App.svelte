@@ -136,8 +136,8 @@
 				window.setTimeout(() => {
 					partialProgress('.progress-bar.low',progressData.low.range);
 					partialProgress('.progress-bar.normal',progressData.normal.range);
-					partialProgress('.progress-bar.override',progressData.obesity.range);
-					partialProgress('.progress-bar.obesity',progressData.override.range);
+					partialProgress('.progress-bar.override',progressData.override.range);
+					partialProgress('.progress-bar.obesity',progressData.obesity.range);
 				},500);
 			}
 		}
