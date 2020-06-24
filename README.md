@@ -2,6 +2,8 @@
 
 Desenvolvido em Svelte e Three.js
 
+http://pesoideal.me/
+
 <img src="https://i.imgur.com/GAR2ymG.jpg" width="524"/>
 
 ---
