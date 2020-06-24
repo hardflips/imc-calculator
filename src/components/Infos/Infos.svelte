@@ -19,11 +19,11 @@
 <section id="information">
     <Container>
         <Row>
-            <Col><h2 class="page-subtitle">Entenda seu resultado de IMC</h2></Col>
+            <Col><h3 class="page-subtitle">Entenda seu resultado de IMC</h3></Col>
         </Row>
         <Row>
             <Col lg="6">
-                <h3 class="subtitle">Abaixo do peso 
+                <h4 class="subtitle">Abaixo do peso 
                     <div class="wrapper-badge low-bg-color">
                         <Badge>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -40,13 +40,13 @@
                             </svg>
                         </Badge>
                     </div>
-                </h3>
+                </h4>
                 <p>
                     Estar abaixo do peso pode ser um sinal de que você <strong>não está comendo o suficiente</strong> ou pode até estar doente. Um <strong>clínico geral</strong> pode ajudar.
                 </p>
             </Col>
             <Col lg="6">
-                <h3 class="subtitle">Peso saudável 
+                <h4 class="subtitle">Peso saudável 
                     <div class="wrapper-badge normal-bg-color">
                         <Badge>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -73,13 +73,13 @@
                             </svg>
                         </Badge>
                     </div>
-                </h3>
+                </h4>
                 <p>Bom trabalho! Mantenha sua rotina de <strong>exercícios</strong> e <strong>alimentação saudável</strong> sempre!</p>
             </Col>
             </Row>
             <Row>
                 <Col lg="6">
-                <h3 class="subtitle">Sobrepeso
+                <h4 class="subtitle">Sobrepeso
                     <div class="wrapper-badge override-bg-color">
                         <Badge>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -96,13 +96,13 @@
                             </svg>
                         </Badge>
                     </div>
-                </h3>
+                </h4>
                 <p>
                 Se você estiver acima do peso a melhor maneira de perder peso é através de uma combinação de <strong>dieta</strong> e <strong>exercício</strong>.
                 </p>
             </Col>
             <Col lg="6">
-                <h3 class="subtitle">Obeso 
+                <h4 class="subtitle">Obeso 
                     <div class="wrapper-badge obesity-bg-color">
                         <Badge>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -119,12 +119,12 @@
                             </svg>
                         </Badge>
                     </div>
-                </h3>
+                </h4>
                 <p>A melhor maneira de perder peso se você pra você é através de uma combinação de <strong>dieta</strong>, <strong>exercício</strong> e em alguns casos até medicamentos.<br>Para obter ajuda e conselhos, consulte um <strong>médico</strong>.
                 </p>
             </Col>
             <Col lg="6">
-                <h3 class="subtitle">Obeso mórbido
+                <h4 class="subtitle">Obeso mórbido
                     <div class="wrapper-badge morbid-bg-color">
                         <Badge>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -141,13 +141,13 @@
                             </svg>
                         </Badge>
                     </div>
-                </h3>
+                </h4>
                 <p>Procure um médico ou nutricionista para ajudá-lo. Para perder peso, você deve reduzir o número de calorias consumidas. Comece acompanhando tudo o que você come. Considere adicionar atividade física depois de atingir um objetivo mínimo de 10% de perda de peso.</p>
             </Col>
         </Row>
         <Row>
             <Col lg="12">
-                <h3>Alertas</h3>
+                <h2>Alertas</h2>
                 <p>
                     Seu IMC pode dizer se você está carregando muito peso, mas fique atento, ela não pode te dizer se você está carregando muita gordura.
                 </p>
@@ -156,13 +156,13 @@
         <Row>
             <Col lg="6">
                 <Alert color="info">
-                    <h4 class="alert-heading text-capitalize">Distinção</h4>
+                    <h5 class="alert-heading text-capitalize">Distinção</h5>
                     O IMC não mostra a diferença entre excesso de gordura, músculo ou osso.
                 </Alert>
             </Col>
             <Col lg="6">
                 <Alert color="warning">
-                    <h4 class="alert-heading text-capitalize">Aplicação</h4>
+                    <h5 class="alert-heading text-capitalize">Aplicação</h5>
                     O IMC adulto não leva em consideração idade, sexo ou massa muscular.
                 </Alert>
             </Col>
@@ -171,7 +171,9 @@
             <Col lg="12">
                 <Card>
                     <CardHeader>
-                        <CardTitle>Importante:</CardTitle>
+                        <CardTitle>
+                            <h6>Importante:</h6>
+                        </CardTitle>
                     </CardHeader>
                     <CardBody>
                         <ListGroup>

@@ -8,11 +8,11 @@
     let container, controls;
 	let camera, renderer, light;
 	let clock = new THREE.Clock();
-	let mixer, mixer2, object;
+	let mixerMale, mixerFemale, object;
 	
-	let isLoading = true;
-	let isLoadingFemale = true;
-	let isLoadingMale = true;
+	let isLoading = true,
+		isLoadingFemale = true,
+		isLoadingMale = true;
 
     export let scene;
     export let handleGetAnimationScene;
@@ -58,11 +58,13 @@
 		let loader = new FBXLoader();
 
 		loader.load('build/assets/models/fbx/female.fbx', (female) => {
-			mixer2 = new THREE.AnimationMixer(female);
-			let action2 = mixer2.clipAction(female.animations[ 0 ]);
+			mixerFemale = new THREE.AnimationMixer(female);
+			let actionFemale = mixerFemale.clipAction(female.animations[0]);
+
 			female.visible = true;
 			female.children[1].material.color = {r: 0.2, g: 0.2, b: 0.2};
 			female.children[2].material.color = {r: 0.5, g: 0.5, b: 0.5};
+
 			if (scene && window.innerWidth <= 800){
 				female.position.x = 0;
 			}
@@ -70,28 +72,27 @@
 				female.position.x = -50;
             }
             
-            action2.play();
+            actionFemale.play();
             
 			female.traverse((child) => {
-
 				if (child.isMesh) {
-
 					child.castShadow = true;
 					child.receiveShadow = true;
-
 				}
-
 			});
+
 			scene.add(female);
 			isLoadingFemale = false;
 		});
 
 		loader.load('build/assets/models/fbx/male.fbx', (male) => {
-			mixer = new THREE.AnimationMixer(male);
-			let action = mixer.clipAction(male.animations[ 0 ]);
+			mixerMale = new THREE.AnimationMixer(male);
+			let actionMale = mixerMale.clipAction(male.animations[0]);
+			
 			male.visible = false;
 			male.children[1].material.color = {r: 0.5, g: 0.5, b: 0.5};
 			male.children[2].material.color = {r: 0.2, g: 0.2, b: 0.2};
+
 			if (scene && window.innerWidth <= 800){
 				male.position.x = 0;
 			}
@@ -99,7 +100,7 @@
 				male.position.x = -50;
             }
             
-            action.play();
+            actionMale.play();
             
 			male.traverse((child) => {
 				if (child.isMesh) {
@@ -107,6 +108,7 @@
 					child.receiveShadow = true;
 				}
 			});
+			
 			scene.add(male);
 			isLoadingMale = false;
 		});
@@ -163,8 +165,8 @@
 		let wrapper = document.querySelector('.wrapper');
 		let delta = clock.getDelta();
 
-		if (mixer2) mixer2.update(delta);
-		if (mixer) mixer.update(delta);
+		if (mixerFemale) mixerFemale.update(delta);
+		if (mixerMale) mixerMale.update(delta);
 
 		renderer.render(scene, camera);
 
