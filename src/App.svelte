@@ -2,20 +2,21 @@
 	import Animation from './components/Animation/Animation.svelte';
 	import Calculator from './components/Calculator/Calculator.svelte';
 	import Result from './components/Result/Result.svelte';
+	import Infos from './components/Infos/Infos.svelte';
 	import Loading from './components/shared/Loading.svelte';
 
-	let scene;
-	let personGender = 'Mulher';
-	let personAge = null;
-	let personHeight = null;
-	let personWeight = null;
-	let resultIMC;
-	let positionTag;
-	let backgrondColor;
-	let loadProgress = false;
-	let isLoading = false;
-	let idealWeight = null;
-	let widthWindow = window.innerWidth;
+	let scene,
+		personGender = 'Mulher',
+		personHeight = null,
+		personWeight = null,
+		resultIMC,
+		positionTag,
+		backgrondColor,
+		loadProgress = false,
+		isLoading = false,
+		idealWeight = null,
+		genderData,
+		widthWindow = window.innerWidth;
 	
 	export let progressData;
 	export let idealWeightData;
@@ -29,7 +30,6 @@
 		widthWindow = window.innerWidth;
 		if (widthWindow >= 801){
 			personHeight = null;
-			personAge = null;
 			personWeight = null;
 			resultIMC = null;
 			idealWeight = null;
@@ -43,7 +43,6 @@
 
 	const changeGender = (param) => {
 		personHeight = null;
-		personAge = null;
 		personWeight = null;
 		resultIMC = null;
 		idealWeight = null;
@@ -58,13 +57,6 @@
 		else {
 			scene.children[4].visible = false;
 			scene.children[5].visible = true;
-		}
-	}
-
-	const changeAge = (param) => {
-		personAge = param;
-		if (parseInt(personAge) > 130 || parseInt(personAge) <= 0) {
-			personAge = '';
 		}
 	}
 
@@ -112,11 +104,9 @@
 
 	const calculateIMC = () => {
 		resultIMC = null;
-		if (personAge && personHeight && personWeight){
+		if (personHeight && personWeight){
 			let heightFormated = personHeight.toString().replace(/(\d)(?=(\d{2})+(?!\d))/g, "$1.");
 			resultIMC = roundToTwo(personWeight / (parseFloat(heightFormated) * parseFloat(heightFormated)));
-
-			let genderData;
 
 			if (personGender == 'Mulher'){
 				genderData = idealWeightData.female;
@@ -131,6 +121,11 @@
 			window.setTimeout(() => {
 				if (resultIMC){
 					calculateProgressTag(resultIMC);
+					let result = document.getElementById('result');
+					if (widthWindow <= 800){
+						scrollIt(result);
+					}
+					hideKeyboard();
 					isLoading = false;
 				}
 			},1000);
@@ -147,9 +142,6 @@
 			}
 		}
 		else {
-			if (personAge === null){
-				personAge = '';
-			}
 			if (personHeight === null){
 				personHeight = '';
 			}
@@ -163,30 +155,33 @@
 		var item = resultIMC*10;
 		positionTag = '0px';
 
+		let female = scene.children[4].children[2];
+		let male = scene.children[5].children[1];
+
 		if (resultIMC <= progressData.low.limit) {
 			backgrondColor = '#ffc107';
-			scene.children[4].children[2].material.color = {r: 0.7, g: 0.5, b: 0}; //yellow
-			scene.children[5].children[1].material.color = {r: 0.7, g: 0.5, b: 0}; //yellow
+			female.material.color = {r: 0.7, g: 0.5, b: 0}; //yellow
+			male.material.color = {r: 0.7, g: 0.5, b: 0}; //yellow
 		}
 		else if (resultIMC <= progressData.normal.limit){
 			backgrondColor = '#8bc34a';
-			scene.children[4].children[2].material.color = {r: 0.3, g: 0.5, b: 0.1}; //green
-			scene.children[5].children[1].material.color = {r: 0.3, g: 0.5, b: 0.1}; //green
+			female.material.color = {r: 0.3, g: 0.5, b: 0.1}; //green
+			male.material.color = {r: 0.3, g: 0.5, b: 0.1}; //green
 		}
 		else if (resultIMC <= progressData.override.limit){
 			backgrondColor = '#ffa726';
-			scene.children[4].children[2].material.color = {r: 0.8, g: 0.4, b: 0}; //orange
-			scene.children[5].children[1].material.color = {r: 0.8, g: 0.4, b: 0}; //orange
+			female.material.color = {r: 0.8, g: 0.4, b: 0}; //orange
+			male.material.color = {r: 0.8, g: 0.4, b: 0}; //orange
 		}
 		else if (resultIMC <= progressData.obesity.limit) {
 			backgrondColor = '#ef6c00';
-			scene.children[4].children[2].material.color = {r: 0.8, g: 0.3, b: 0}; //orange dark
-			scene.children[5].children[1].material.color = {r: 0.8, g: 0.3, b: 0}; //orange dark
+			female.material.color = {r: 0.8, g: 0.3, b: 0}; //orange dark
+			male.material.color = {r: 0.8, g: 0.3, b: 0}; //orange dark
 		}
 		else {
 			backgrondColor = '#c62828';
-			scene.children[4].children[2].material.color = {r: 0.6, g: 0.1, b: 0.1}; //red
-			scene.children[5].children[1].material.color = {r: 0.6, g: 0.1, b: 0.1}; //red
+			female.material.color = {r: 0.6, g: 0.1, b: 0.1}; //red
+			male.material.color = {r: 0.6, g: 0.1, b: 0.1}; //red
 		}
 
 		if (resultIMC >= progressData.morbid.limit){
@@ -237,6 +232,18 @@
 		}
 	});
 
+	const scrollIt = (element) => {
+		window.scrollTo({
+			'behavior': 'smooth',
+			'left': 0,
+			'top': element.offsetTop
+		});
+	}
+
+	const hideKeyboard = () => {
+		document.activeElement.blur();
+	}
+
 </script>
 
 <Animation
@@ -247,12 +254,10 @@
 <Calculator
 	optionsGender={optionsGender}
 	personGender={personGender}
-	personAge={personAge}
 	personHeight={personHeight}
 	personWeight={personWeight}
 	idealWeight={idealWeight}
 	handleChangeGender={(param) => changeGender(param)}
-	handleChangeAge={(param) => changeAge(param)}
 	handleChangeHeight={(param) => changeHeight(param)}
 	handleChangeWeight={(param) => changeWeight(param)}
 	handleCalculateIMC={() => calculateIMC()}
@@ -264,6 +269,9 @@
 	backgrondColor={backgrondColor}
 	loadProgress={loadProgress}
 />
+
+<Infos />
+
 
 <Loading
 	isLoading={isLoading}

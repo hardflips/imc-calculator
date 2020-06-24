@@ -18,11 +18,9 @@
     
 	export let optionsGender;
     export let personGender;
-    export let personAge;
     export let personHeight;
 	export let personWeight;
 	export let handleChangeGender;
-	export let handleChangeAge;
 	export let handleChangeHeight;
 	export let handleChangeWeight;
 	export let handleCalculateIMC;
@@ -30,13 +28,16 @@
 
 </script>
 
-<div class="wrapper">
+<section id="calculator" class="wrapper">
 	<Card color="dark" inverse>
 		<CardHeader>
-			<CardTitle>Calculadora de IMC</CardTitle>
+			<CardTitle>
+				<h1 class="page-title">Peso ideal - Calculadora IMC</h1>
+			</CardTitle>
 		</CardHeader>
 		<CardBody>
 			<Form id="calculator" on:submit={e => e.preventDefault()}>
+			
 				<div class="radio-group">
 					{#each optionsGender as value}
 						<FormGroup>
@@ -53,22 +54,6 @@
 						</FormGroup>
 					{/each}
 				</div>
-				
-				<FormGroup>
-					<Label for="ageInput">Idade:</Label>
-					<Input
-						type="number"
-						name="age"
-						id="ageInput"
-						placeholder="Digite sua idade"
-						minlength="1"
-						maxlength="3"
-						bind:value={personAge}
-						required
-						on:change={handleChangeAge(personAge)}
-						class="{personAge === undefined || personAge === '' ? 'has-error' : ''}"
-					/>
-				</FormGroup>
 
 				<FormGroup>
 					<Label for="heightInput">Altura:</Label>
@@ -119,10 +104,18 @@
 
 		</CardBody>
 	</Card>
-</div>
+</section>
 
 <style>
+	:global(.card-header) {
+		background-color: rgba(0, 0, 0, .2);
+	}
 	:global(.card-title) {
+		margin-bottom: 0;
+	}
+
+	:global(.card-title .page-title) {
+		font-size: 18px;
 		margin-bottom: 0;
 	}
 
@@ -175,12 +168,15 @@
 
 	@media (min-width:320px) {
 		:global(.wrapper) {
-			position: relative;
+			position: absolute;
 			width: 100%;
+			min-height: 349px;
+			max-height: 0;
 			transition: all .5s ease-in-out;
 			box-shadow: 0 0 8px rgba(0,0,0, .25);
 			bottom: 0;
-			top: -50%;
+			top: 0;
+			z-index: 99;
 		}
 		:global(.toast){
 			width: 100%;
@@ -196,22 +192,22 @@
 	@media (min-width: 801px) {
 		:global(.wrapper) {
 			position: absolute;
-			right: 5%;
-			top: 10%;
+			right: 10%;
+			top: 15%;
 			bottom: auto;
-			width: 400px;
+			width: 320px;
 		}
 	}
 
 	@media (min-width:1025px) {
 		:global(.wrapper) {
-			right: 15%;
+			right: 20%;
 		}
 	}
 
 	@media (min-width: 1441px) {
 		:global(.wrapper) {
-			right: 25%;
+			right: 30%;
 			top: 240px;
 		}
 	}
