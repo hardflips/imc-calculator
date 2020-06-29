@@ -8,3 +8,7 @@ html, body {
 body {
 	color: #2d3e4f;
 }
+
+.feedback-page {
+	margin: 24px;
+}

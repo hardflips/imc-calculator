@@ -71096,22 +71096,22 @@ vec4 envMapTexelToLinear(vec4 color) {
     			attr_dev(svg0, "xml:space", "preserve");
     			attr_dev(svg0, "class", "svelte-1kaw36i");
     			add_location(svg0, file$q, 130, 52, 3787);
-    			attr_dev(a0, "href", "/sim");
+    			attr_dev(a0, "href", "/yes");
     			attr_dev(a0, "target", "_blank");
     			attr_dev(a0, "class", "svelte-1kaw36i");
     			add_location(a0, file$q, 130, 20, 3755);
     			attr_dev(path2, "d", "M2.7,29.1L5.4,9.3c0,0,0.3-4.3,7.2-5.7h26.1c0.2,0,0.4,0,0.6,0.1l0,0c3.2,0.6,5.4,3.4,5.4,6.6v22.4c0,1.1-0.5,2.1-1.3,2.8   c-4.5,4.1-9.6,7.9-12,13.6c-0.7,1.6-1.2,3.4-1.6,5.1c-0.2,0.8-0.3,1.7-0.4,2.5c0,0.9-0.1,1.8-0.7,2.6c-0.5,0.7-1.3,1.1-2.1,1.1   c-2.2,0.2-5-2.2-5.5-4.3c-0.6-2.7-0.5-5.5,0-8.2c0.2-1.3,0.6-2.7,1-4c0.1-0.3,0.6-2,1.1-3.2c0.2-0.5-0.2-1.1-0.7-1.1L7.5,39   C7.5,39,0.8,37.6,2.7,29.1z");
-    			add_location(path2, file$q, 131, 250, 4956);
+    			add_location(path2, file$q, 131, 249, 4955);
     			attr_dev(path3, "d", "M47.6,35.7V4.5c0-0.3,0.2-0.5,0.5-0.5h3.1c0.7,0,1.3,0.5,1.5,1.1l8.8,29.1c0.3,1-0.5,2.1-1.5,2.1H48.1   C47.8,36.3,47.6,36,47.6,35.7z");
-    			add_location(path3, file$q, 131, 655, 5361);
-    			add_location(g1, file$q, 131, 247, 4953);
+    			add_location(path3, file$q, 131, 654, 5360);
+    			add_location(g1, file$q, 131, 246, 4952);
     			attr_dev(text1, "x", "0");
     			attr_dev(text1, "y", "79");
     			attr_dev(text1, "fill", "#000000");
     			attr_dev(text1, "font-size", "5px");
     			attr_dev(text1, "font-weight", "bold");
     			attr_dev(text1, "font-family", "'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif");
-    			add_location(text1, file$q, 131, 801, 5507);
+    			add_location(text1, file$q, 131, 800, 5506);
     			attr_dev(svg1, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg1, "xmlns:xlink", "http://www.w3.org/1999/xlink");
     			attr_dev(svg1, "version", "1.1");
@@ -71121,8 +71121,8 @@ vec4 envMapTexelToLinear(vec4 color) {
     			set_style(svg1, "enable-background", "new 0 0 64 64");
     			attr_dev(svg1, "xml:space", "preserve");
     			attr_dev(svg1, "class", "svelte-1kaw36i");
-    			add_location(svg1, file$q, 131, 52, 4758);
-    			attr_dev(a1, "href", "/nao");
+    			add_location(svg1, file$q, 131, 51, 4757);
+    			attr_dev(a1, "href", "/no");
     			attr_dev(a1, "target", "_blank");
     			attr_dev(a1, "class", "svelte-1kaw36i");
     			add_location(a1, file$q, 131, 20, 4726);
@@ -71258,7 +71258,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			h3 = element("h3");
     			h3.textContent = "Entenda seu resultado de IMC";
     			attr_dev(h3, "class", "page-subtitle");
-    			add_location(h3, file$q, 136, 17, 5760);
+    			add_location(h3, file$q, 136, 17, 5759);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -71356,20 +71356,20 @@ vec4 envMapTexelToLinear(vec4 color) {
     			circle1 = svg_element("circle");
     			path1 = svg_element("path");
     			attr_dev(path0, "d", "M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480     C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z");
-    			add_location(path0, file$q, 147, 44, 6441);
+    			add_location(path0, file$q, 147, 44, 6440);
     			attr_dev(circle0, "cx", "176");
     			attr_dev(circle0, "cy", "176");
     			attr_dev(circle0, "r", "32");
-    			add_location(circle0, file$q, 148, 44, 6691);
+    			add_location(circle0, file$q, 148, 44, 6690);
     			attr_dev(circle1, "cx", "336");
     			attr_dev(circle1, "cy", "176");
     			attr_dev(circle1, "r", "32");
-    			add_location(circle1, file$q, 149, 44, 6771);
+    			add_location(circle1, file$q, 149, 44, 6770);
     			attr_dev(path1, "d", "M256,240c-79.529,0-144,64.471-144,144h32c0-61.856,50.144-112,112-112s112,50.144,112,112h32     C400,304.471,335.529,240,256,240z");
-    			add_location(path1, file$q, 150, 44, 6851);
-    			add_location(g0, file$q, 146, 40, 6392);
-    			add_location(g1, file$q, 145, 36, 6347);
-    			add_location(g2, file$q, 144, 32, 6306);
+    			add_location(path1, file$q, 150, 44, 6850);
+    			add_location(g0, file$q, 146, 40, 6391);
+    			add_location(g1, file$q, 145, 36, 6346);
+    			add_location(g2, file$q, 144, 32, 6305);
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "xmlns:xlink", "http://www.w3.org/1999/xlink");
     			attr_dev(svg, "version", "1.1");
@@ -71379,7 +71379,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			attr_dev(svg, "viewBox", "0 0 512 512");
     			set_style(svg, "enable-background", "new 0 0 512 512");
     			attr_dev(svg, "xml:space", "preserve");
-    			add_location(svg, file$q, 143, 28, 6061);
+    			add_location(svg, file$q, 143, 28, 6060);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -71446,12 +71446,12 @@ vec4 envMapTexelToLinear(vec4 color) {
     			strong1.textContent = "clínico geral";
     			t6 = text(" pode ajudar.");
     			attr_dev(div, "class", "wrapper-badge low-bg-color svelte-1kaw36i");
-    			add_location(div, file$q, 141, 20, 5958);
+    			add_location(div, file$q, 141, 20, 5957);
     			attr_dev(h4, "class", "subtitle svelte-1kaw36i");
-    			add_location(h4, file$q, 140, 16, 5900);
-    			add_location(strong0, file$q, 159, 71, 7332);
-    			add_location(strong1, file$q, 159, 147, 7408);
-    			add_location(p, file$q, 158, 16, 7256);
+    			add_location(h4, file$q, 140, 16, 5899);
+    			add_location(strong0, file$q, 159, 71, 7331);
+    			add_location(strong1, file$q, 159, 147, 7407);
+    			add_location(p, file$q, 158, 16, 7255);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -71536,25 +71536,25 @@ vec4 envMapTexelToLinear(vec4 color) {
     			g6 = svg_element("g");
     			path1 = svg_element("path");
     			attr_dev(path0, "d", "M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480    C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z");
-    			add_location(path0, file$q, 169, 40, 8031);
-    			add_location(g0, file$q, 168, 36, 7986);
-    			add_location(g1, file$q, 167, 32, 7945);
+    			add_location(path0, file$q, 169, 40, 8030);
+    			add_location(g0, file$q, 168, 36, 7985);
+    			add_location(g1, file$q, 167, 32, 7944);
     			attr_dev(circle0, "cx", "176");
     			attr_dev(circle0, "cy", "176");
     			attr_dev(circle0, "r", "32");
-    			add_location(circle0, file$q, 174, 40, 8434);
-    			add_location(g2, file$q, 173, 36, 8389);
-    			add_location(g3, file$q, 172, 32, 8348);
+    			add_location(circle0, file$q, 174, 40, 8433);
+    			add_location(g2, file$q, 173, 36, 8388);
+    			add_location(g3, file$q, 172, 32, 8347);
     			attr_dev(circle1, "cx", "336");
     			attr_dev(circle1, "cy", "176");
     			attr_dev(circle1, "r", "32");
-    			add_location(circle1, file$q, 179, 40, 8668);
-    			add_location(g4, file$q, 178, 36, 8623);
-    			add_location(g5, file$q, 177, 32, 8582);
+    			add_location(circle1, file$q, 179, 40, 8667);
+    			add_location(g4, file$q, 178, 36, 8622);
+    			add_location(g5, file$q, 177, 32, 8581);
     			attr_dev(path1, "d", "M368,256c0,61.856-50.144,112-112,112s-112-50.144-112-112h-32c0,79.529,64.471,144,144,144s144-64.471,144-144H368z");
-    			add_location(path1, file$q, 184, 40, 8902);
-    			add_location(g6, file$q, 183, 36, 8857);
-    			add_location(g7, file$q, 182, 32, 8816);
+    			add_location(path1, file$q, 184, 40, 8901);
+    			add_location(g6, file$q, 183, 36, 8856);
+    			add_location(g7, file$q, 182, 32, 8815);
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "xmlns:xlink", "http://www.w3.org/1999/xlink");
     			attr_dev(svg, "version", "1.1");
@@ -71564,7 +71564,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			attr_dev(svg, "viewBox", "0 0 512 512");
     			set_style(svg, "enable-background", "new 0 0 512 512");
     			attr_dev(svg, "xml:space", "preserve");
-    			add_location(svg, file$q, 166, 28, 7700);
+    			add_location(svg, file$q, 166, 28, 7699);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -71636,12 +71636,12 @@ vec4 envMapTexelToLinear(vec4 color) {
     			strong1.textContent = "alimentação saudável";
     			t6 = text(" sempre!");
     			attr_dev(div, "class", "wrapper-badge normal-bg-color svelte-1kaw36i");
-    			add_location(div, file$q, 164, 20, 7594);
+    			add_location(div, file$q, 164, 20, 7593);
     			attr_dev(h4, "class", "subtitle svelte-1kaw36i");
-    			add_location(h4, file$q, 163, 16, 7537);
-    			add_location(strong0, file$q, 191, 56, 9285);
-    			add_location(strong1, file$q, 191, 86, 9315);
-    			add_location(p, file$q, 191, 16, 9245);
+    			add_location(h4, file$q, 163, 16, 7536);
+    			add_location(strong0, file$q, 191, 56, 9284);
+    			add_location(strong1, file$q, 191, 86, 9314);
+    			add_location(p, file$q, 191, 16, 9244);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -71798,20 +71798,20 @@ vec4 envMapTexelToLinear(vec4 color) {
     			circle1 = svg_element("circle");
     			path1 = svg_element("path");
     			attr_dev(path0, "d", "M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480     C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z");
-    			add_location(path0, file$q, 203, 44, 10011);
+    			add_location(path0, file$q, 203, 44, 10010);
     			attr_dev(circle0, "cx", "176");
     			attr_dev(circle0, "cy", "176");
     			attr_dev(circle0, "r", "32");
-    			add_location(circle0, file$q, 204, 44, 10261);
+    			add_location(circle0, file$q, 204, 44, 10260);
     			attr_dev(circle1, "cx", "336");
     			attr_dev(circle1, "cy", "176");
     			attr_dev(circle1, "r", "32");
-    			add_location(circle1, file$q, 205, 44, 10341);
+    			add_location(circle1, file$q, 205, 44, 10340);
     			attr_dev(path1, "d", "M256,256c-35.346,0-64,28.654-64,64c0,35.346,28.654,64,64,64c35.346,0,64-28.654,64-64C320,284.654,291.346,256,256,256     z M256,352c-17.673,0-32-14.327-32-32c0-17.673,14.327-32,32-32c17.673,0,32,14.327,32,32C288,337.673,273.673,352,256,352z");
-    			add_location(path1, file$q, 206, 44, 10421);
-    			add_location(g0, file$q, 202, 40, 9962);
-    			add_location(g1, file$q, 201, 36, 9917);
-    			add_location(g2, file$q, 200, 32, 9876);
+    			add_location(path1, file$q, 206, 44, 10420);
+    			add_location(g0, file$q, 202, 40, 9961);
+    			add_location(g1, file$q, 201, 36, 9916);
+    			add_location(g2, file$q, 200, 32, 9875);
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "xmlns:xlink", "http://www.w3.org/1999/xlink");
     			attr_dev(svg, "version", "1.1");
@@ -71821,7 +71821,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			attr_dev(svg, "viewBox", "0 0 512 512");
     			set_style(svg, "enable-background", "new 0 0 512 512");
     			attr_dev(svg, "xml:space", "preserve");
-    			add_location(svg, file$q, 199, 28, 9631);
+    			add_location(svg, file$q, 199, 28, 9630);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -71888,12 +71888,12 @@ vec4 envMapTexelToLinear(vec4 color) {
     			strong1.textContent = "exercício";
     			t6 = text(".");
     			attr_dev(div, "class", "wrapper-badge override-bg-color svelte-1kaw36i");
-    			add_location(div, file$q, 197, 20, 9523);
+    			add_location(div, file$q, 197, 20, 9522);
     			attr_dev(h4, "class", "subtitle svelte-1kaw36i");
-    			add_location(h4, file$q, 196, 16, 9471);
-    			add_location(strong0, file$q, 215, 109, 11052);
-    			add_location(strong1, file$q, 215, 134, 11077);
-    			add_location(p, file$q, 214, 16, 10938);
+    			add_location(h4, file$q, 196, 16, 9470);
+    			add_location(strong0, file$q, 215, 109, 11051);
+    			add_location(strong1, file$q, 215, 134, 11076);
+    			add_location(p, file$q, 214, 16, 10937);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -71968,20 +71968,20 @@ vec4 envMapTexelToLinear(vec4 color) {
     			circle1 = svg_element("circle");
     			path1 = svg_element("path");
     			attr_dev(path0, "d", "M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480     C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z");
-    			add_location(path0, file$q, 226, 44, 11726);
+    			add_location(path0, file$q, 226, 44, 11725);
     			attr_dev(circle0, "cx", "176");
     			attr_dev(circle0, "cy", "176");
     			attr_dev(circle0, "r", "32");
-    			add_location(circle0, file$q, 227, 44, 11976);
+    			add_location(circle0, file$q, 227, 44, 11975);
     			attr_dev(circle1, "cx", "336");
     			attr_dev(circle1, "cy", "176");
     			attr_dev(circle1, "r", "32");
-    			add_location(circle1, file$q, 228, 44, 12056);
+    			add_location(circle1, file$q, 228, 44, 12055);
     			attr_dev(path1, "d", "M320,256H192c-35.346,0-64,28.654-64,64c0,35.346,28.654,64,64,64h128c35.346,0,64-28.654,64-64     C384,284.654,355.346,256,320,256z M320,352H192c-17.673,0-32-14.327-32-32c0-17.673,14.327-32,32-32h128     c17.673,0,32,14.327,32,32C352,337.673,337.673,352,320,352z");
-    			add_location(path1, file$q, 229, 44, 12136);
-    			add_location(g0, file$q, 225, 40, 11677);
-    			add_location(g1, file$q, 224, 36, 11632);
-    			add_location(g2, file$q, 223, 32, 11591);
+    			add_location(path1, file$q, 229, 44, 12135);
+    			add_location(g0, file$q, 225, 40, 11676);
+    			add_location(g1, file$q, 224, 36, 11631);
+    			add_location(g2, file$q, 223, 32, 11590);
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "xmlns:xlink", "http://www.w3.org/1999/xlink");
     			attr_dev(svg, "version", "1.1");
@@ -71991,7 +71991,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			attr_dev(svg, "viewBox", "0 0 512 512");
     			set_style(svg, "enable-background", "new 0 0 512 512");
     			attr_dev(svg, "xml:space", "preserve");
-    			add_location(svg, file$q, 222, 28, 11346);
+    			add_location(svg, file$q, 222, 28, 11345);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -72067,14 +72067,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     			strong2.textContent = "médico";
     			t9 = text(".");
     			attr_dev(div, "class", "wrapper-badge obesity-bg-color svelte-1kaw36i");
-    			add_location(div, file$q, 220, 20, 11239);
+    			add_location(div, file$q, 220, 20, 11238);
     			attr_dev(h4, "class", "subtitle svelte-1kaw36i");
-    			add_location(h4, file$q, 219, 16, 11190);
-    			add_location(strong0, file$q, 237, 99, 12757);
-    			add_location(strong1, file$q, 237, 123, 12781);
-    			add_location(br, file$q, 237, 185, 12843);
-    			add_location(strong2, file$q, 237, 231, 12889);
-    			add_location(p, file$q, 237, 16, 12674);
+    			add_location(h4, file$q, 219, 16, 11189);
+    			add_location(strong0, file$q, 237, 99, 12756);
+    			add_location(strong1, file$q, 237, 123, 12780);
+    			add_location(br, file$q, 237, 185, 12842);
+    			add_location(strong2, file$q, 237, 231, 12888);
+    			add_location(p, file$q, 237, 16, 12673);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -72153,16 +72153,16 @@ vec4 envMapTexelToLinear(vec4 color) {
     			path2 = svg_element("path");
     			path3 = svg_element("path");
     			attr_dev(path0, "d", "M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480     C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z");
-    			add_location(path0, file$q, 248, 44, 13541);
+    			add_location(path0, file$q, 248, 44, 13540);
     			attr_dev(path1, "d", "M222.72,214.08c2.465-5.99,1.075-12.875-3.52-17.44l-64-64l-22.56,22.72l36.8,36.64H128v32h80     C214.459,223.968,220.266,220.055,222.72,214.08z");
-    			add_location(path1, file$q, 249, 44, 13791);
+    			add_location(path1, file$q, 249, 44, 13790);
     			attr_dev(path2, "d", "M379.36,155.36l-22.72-22.72l-64,64c-6.274,6.223-6.316,16.353-0.093,22.627c3.027,3.052,7.155,4.758,11.453,4.733h80     v-32h-41.44L379.36,155.36z");
-    			add_location(path2, file$q, 250, 44, 13991);
+    			add_location(path2, file$q, 250, 44, 13990);
     			attr_dev(path3, "d", "M313.92,307.04l-35.52,25.28l-35.52-25.28c-5.555-3.955-13.005-3.955-18.56,0l-35.52,25.28l-35.52-25.28l-18.56,25.92     l44.8,32c5.555,3.955,13.005,3.955,18.56,0l35.52-25.28l35.52,25.28c5.555,3.955,13.005,3.955,18.56,0l35.52-25.44l35.52,25.44     l18.56-26.08l-44.8-32C326.891,302.973,319.44,303.037,313.92,307.04z");
-    			add_location(path3, file$q, 251, 44, 14193);
-    			add_location(g0, file$q, 247, 40, 13492);
-    			add_location(g1, file$q, 246, 36, 13447);
-    			add_location(g2, file$q, 245, 32, 13406);
+    			add_location(path3, file$q, 251, 44, 14192);
+    			add_location(g0, file$q, 247, 40, 13491);
+    			add_location(g1, file$q, 246, 36, 13446);
+    			add_location(g2, file$q, 245, 32, 13405);
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "xmlns:xlink", "http://www.w3.org/1999/xlink");
     			attr_dev(svg, "version", "1.1");
@@ -72172,7 +72172,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			attr_dev(svg, "viewBox", "0 0 512 512");
     			set_style(svg, "enable-background", "new 0 0 512 512");
     			attr_dev(svg, "xml:space", "preserve");
-    			add_location(svg, file$q, 244, 28, 13161);
+    			add_location(svg, file$q, 244, 28, 13160);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -72228,10 +72228,10 @@ vec4 envMapTexelToLinear(vec4 color) {
     			p = element("p");
     			p.textContent = "Procure um médico ou nutricionista para ajudá-lo. Para perder peso, você deve reduzir o número de calorias consumidas. Comece acompanhando tudo o que você come. Considere adicionar atividade física depois de atingir um objetivo mínimo de 10% de perda de peso.";
     			attr_dev(div, "class", "wrapper-badge morbid-bg-color svelte-1kaw36i");
-    			add_location(div, file$q, 242, 20, 13055);
+    			add_location(div, file$q, 242, 20, 13054);
     			attr_dev(h4, "class", "subtitle svelte-1kaw36i");
-    			add_location(h4, file$q, 241, 16, 12999);
-    			add_location(p, file$q, 259, 16, 14782);
+    			add_location(h4, file$q, 241, 16, 12998);
+    			add_location(p, file$q, 259, 16, 14781);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -72425,13 +72425,13 @@ vec4 envMapTexelToLinear(vec4 color) {
     			t5 = text("Fonte: ");
     			a = element("a");
     			a.textContent = "IBGE";
-    			add_location(h4, file$q, 264, 16, 15143);
-    			add_location(span, file$q, 265, 16, 15176);
+    			add_location(h4, file$q, 264, 16, 15142);
+    			add_location(span, file$q, 265, 16, 15175);
     			attr_dev(a, "href", "https://www.ibge.gov.br/");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "title", "IBGE");
-    			add_location(a, file$q, 278, 30, 15683);
-    			add_location(small, file$q, 278, 16, 15669);
+    			add_location(a, file$q, 278, 30, 15682);
+    			add_location(small, file$q, 278, 16, 15668);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -72554,13 +72554,13 @@ vec4 envMapTexelToLinear(vec4 color) {
     			t5 = text("Fonte: ");
     			a = element("a");
     			a.textContent = "IBGE";
-    			add_location(h4, file$q, 281, 16, 15827);
-    			add_location(span, file$q, 282, 16, 15862);
+    			add_location(h4, file$q, 281, 16, 15826);
+    			add_location(span, file$q, 282, 16, 15861);
     			attr_dev(a, "href", "https://www.ibge.gov.br/");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "title", "IBGE");
-    			add_location(a, file$q, 297, 30, 16475);
-    			add_location(small, file$q, 297, 16, 16461);
+    			add_location(a, file$q, 297, 30, 16474);
+    			add_location(small, file$q, 297, 16, 16460);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -72778,15 +72778,15 @@ vec4 envMapTexelToLinear(vec4 color) {
     			t9 = text("Fonte: ");
     			a = element("a");
     			a.textContent = "G1";
-    			add_location(h4, file$q, 302, 16, 16651);
-    			add_location(b0, file$q, 303, 63, 16763);
-    			add_location(b1, file$q, 303, 86, 16786);
-    			add_location(span, file$q, 303, 16, 16716);
+    			add_location(h4, file$q, 302, 16, 16650);
+    			add_location(b0, file$q, 303, 63, 16762);
+    			add_location(b1, file$q, 303, 86, 16785);
+    			add_location(span, file$q, 303, 16, 16715);
     			attr_dev(a, "href", "https://g1.globo.com/pb/paraiba/noticia/populacao-de-joao-pessoa-e-a-mais-obesa-do-nordeste-diz-ministerio-da-saude.ghtml");
     			attr_dev(a, "title", "G1");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file$q, 315, 30, 17262);
-    			add_location(small, file$q, 315, 16, 17248);
+    			add_location(a, file$q, 315, 30, 17261);
+    			add_location(small, file$q, 315, 16, 17247);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -72979,14 +72979,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     			a = element("a");
     			a.textContent = "NCD Risk Factor";
     			t9 = text(". Dados de 2014");
-    			add_location(h4, file$q, 320, 16, 17530);
-    			add_location(strong, file$q, 321, 39, 17623);
-    			add_location(span, file$q, 321, 16, 17600);
+    			add_location(h4, file$q, 320, 16, 17529);
+    			add_location(strong, file$q, 321, 39, 17622);
+    			add_location(span, file$q, 321, 16, 17599);
     			attr_dev(a, "href", "http://ncdrisc.org/");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "title", "NCD Risk Factor");
-    			add_location(a, file$q, 332, 76, 18127);
-    			add_location(small, file$q, 332, 16, 18067);
+    			add_location(a, file$q, 332, 76, 18126);
+    			add_location(small, file$q, 332, 16, 18066);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -73119,14 +73119,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     			t7 = text("Fonte: ");
     			a = element("a");
     			a.textContent = "UFPE: Universidade Federal de Pernambuco";
-    			add_location(h4, file$q, 335, 16, 18303);
-    			add_location(strong, file$q, 336, 30, 18363);
-    			add_location(span, file$q, 336, 16, 18349);
+    			add_location(h4, file$q, 335, 16, 18302);
+    			add_location(strong, file$q, 336, 30, 18362);
+    			add_location(span, file$q, 336, 16, 18348);
     			attr_dev(a, "href", "https://www.ufpe.br/");
     			attr_dev(a, "title", "UFPE: Universidade Federal de Pernambuco");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file$q, 346, 30, 18777);
-    			add_location(small, file$q, 346, 16, 18763);
+    			add_location(a, file$q, 346, 30, 18776);
+    			add_location(small, file$q, 346, 16, 18762);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -73272,8 +73272,8 @@ vec4 envMapTexelToLinear(vec4 color) {
     			t1 = space();
     			p = element("p");
     			p.textContent = "Seu IMC pode dizer se você está carregando muito peso, mas fique atento, ela não pode te dizer se você está carregando muita gordura.";
-    			add_location(h2, file$q, 351, 16, 19021);
-    			add_location(p, file$q, 352, 16, 19055);
+    			add_location(h2, file$q, 351, 16, 19020);
+    			add_location(p, file$q, 352, 16, 19054);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -73365,7 +73365,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			h5.textContent = "Distinção";
     			t1 = text("\r\n                    O IMC não mostra a diferença entre excesso de gordura, músculo ou osso.");
     			attr_dev(h5, "class", "alert-heading text-capitalize");
-    			add_location(h5, file$q, 360, 20, 19372);
+    			add_location(h5, file$q, 360, 20, 19371);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h5, anchor);
@@ -73455,7 +73455,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			h5.textContent = "Aplicação";
     			t1 = text("\r\n                    O IMC adulto não leva em consideração idade, sexo ou massa muscular.");
     			attr_dev(h5, "class", "alert-heading text-capitalize");
-    			add_location(h5, file$q, 366, 20, 19656);
+    			add_location(h5, file$q, 366, 20, 19655);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h5, anchor);
@@ -73624,7 +73624,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		c: function create() {
     			h6 = element("h6");
     			h6.textContent = "Importante:";
-    			add_location(h6, file$q, 376, 28, 20030);
+    			add_location(h6, file$q, 376, 28, 20029);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h6, anchor);
@@ -73710,7 +73710,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			strong = element("strong");
     			strong.textContent = "01";
     			t1 = text(" - Adultos e atletas musculosos podem ser classificados como \"acima do peso\" ou \"obesos\", embora a gordura corporal seja baixa.");
-    			add_location(strong, file$q, 381, 43, 20237);
+    			add_location(strong, file$q, 381, 43, 20236);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, strong, anchor);
@@ -73743,7 +73743,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			strong = element("strong");
     			strong.textContent = "02";
     			t1 = text(" - Os adultos que perdem músculos à medida que envelhecem podem cair na faixa de \"peso saudável\", embora possam estar carregando excesso de gordura.");
-    			add_location(strong, file$q, 382, 43, 20444);
+    			add_location(strong, file$q, 382, 43, 20443);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, strong, anchor);
@@ -73776,7 +73776,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			strong = element("strong");
     			strong.textContent = "03";
     			t1 = text(" - A gravidez também afeta o resultado do IMC da mulher. Você deve usar seu peso antes da gravidez ao calcular seu IMC.");
-    			add_location(strong, file$q, 383, 43, 20672);
+    			add_location(strong, file$q, 383, 43, 20671);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, strong, anchor);
@@ -74102,7 +74102,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		c: function create() {
     			h6 = element("h6");
     			h6.textContent = "Links úteis:";
-    			add_location(h6, file$q, 392, 28, 21093);
+    			add_location(h6, file$q, 392, 28, 21092);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h6, anchor);
@@ -74189,7 +74189,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			attr_dev(a, "href", "https://www.saude.gov.br/noticias/agencia-saude/45612-brasileiros-atingem-maior-indice-de-obesidade-nos-ultimos-treze-anos");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "title", "Brasileiros atingem maior índice de obesidade nos últimos treze anos");
-    			add_location(a, file$q, 397, 43, 21301);
+    			add_location(a, file$q, 397, 43, 21300);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -74221,7 +74221,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			attr_dev(a, "href", "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/25261-ibge-da-inicio-a-pesquisa-nacional-de-saude-pns-2019");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "title", "IBGE dá início à Pesquisa Nacional de Saúde (PNS) 2019");
-    			add_location(a, file$q, 398, 43, 21660);
+    			add_location(a, file$q, 398, 43, 21659);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -74252,11 +74252,11 @@ vec4 envMapTexelToLinear(vec4 color) {
     			a = element("a");
     			strong = element("strong");
     			strong.textContent = "Índice de massa corporal (IMC)";
-    			add_location(strong, file$q, 399, 186, 22167);
+    			add_location(strong, file$q, 399, 186, 22166);
     			attr_dev(a, "href", "https://brasilescola.uol.com.br/educacao-fisica/Indice-massa-corporal-imc.htm");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "title", "Índice de massa corporal (IMC)");
-    			add_location(a, file$q, 399, 43, 22024);
+    			add_location(a, file$q, 399, 43, 22023);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -74289,7 +74289,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			attr_dev(a, "href", "https://www.youtube.com/watch?v=nLEZhM5vx0I");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "title", "Limitações do Índice de Massa Corporal");
-    			add_location(a, file$q, 400, 43, 22279);
+    			add_location(a, file$q, 400, 43, 22278);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
