@@ -1,9 +1,11 @@
 <script>
+	import Menu from './components/shared/Menu.svelte';
+	import Loading from './components/shared/Loading.svelte';
+	
 	import Animation from './components/Animation/Animation.svelte';
 	import Calculator from './components/Calculator/Calculator.svelte';
 	import Result from './components/Result/Result.svelte';
 	import Infos from './components/Infos/Infos.svelte';
-	import Loading from './components/shared/Loading.svelte';
 
 	let scene,
 		personGender = 'Mulher',
@@ -245,6 +247,8 @@
 	}
 
 </script>
+
+<Menu />
 
 <Animation
 	scene={scene}
