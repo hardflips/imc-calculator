@@ -170,8 +170,9 @@
 		:global(.wrapper) {
 			position: absolute;
 			width: 100%;
-			min-height: 349px;
+			min-height: 346px;
 			max-height: 0;
+			border-radius: 4px;
 			transition: all .5s ease-in-out;
 			box-shadow: 0 0 8px rgba(0,0,0, .25);
 			bottom: 0;
