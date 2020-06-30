@@ -58,11 +58,14 @@
     :global(.navbar) {
         border-radius: 4px;
     }
-    :global(.active a) {
+    :global(.navbar-light .navbar-nav .active>.nav-link) {
         border-radius: 4px;
         background-color: #2d3e4f;
+        color: white;
     }
-    :global(.navbar-light .navbar-nav .active>.nav-link) {
+    :global(.navbar-nav .nav-link) {
+        padding-top: 2px;
+        padding-bottom: 2px;
         color: white;
     }
     @media (min-width: 801px) {

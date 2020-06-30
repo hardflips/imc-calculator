@@ -15534,7 +15534,7 @@ var app = (function () {
     			nav = element("nav");
     			create_component(navbar.$$.fragment);
     			attr_dev(nav, "id", "navbar");
-    			attr_dev(nav, "class", "svelte-sbxs1y");
+    			attr_dev(nav, "class", "svelte-11c4q9c");
     			add_location(nav, file$x, 19, 0, 339);
     		},
     		l: function claim(nodes) {
@@ -74042,7 +74042,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			create_component(formgroup1.$$.fragment);
     			t2 = space();
     			create_component(button.$$.fragment);
-    			attr_dev(div, "class", "radio-group svelte-1mvh0p3");
+    			attr_dev(div, "class", "radio-group svelte-1vs5qoa");
     			add_location(div, file$z, 40, 4, 879);
     		},
     		m: function mount(target, anchor) {
@@ -77844,10 +77844,10 @@ vec4 envMapTexelToLinear(vec4 color) {
     			span = element("span");
     			t2 = text("A maior taxa de excesso de peso ficou em ");
     			b0 = element("b");
-    			b0.textContent = "Rio Branco-AC";
+    			b0.textContent = "Rio Branco (AC)";
     			t4 = text(" e ");
     			b1 = element("b");
-    			b1.textContent = "Palmas-TO";
+    			b1.textContent = "Palmas (TO)";
     			t6 = text(" a menor.");
     			t7 = space();
     			if (if_block) if_block.c();
@@ -77858,13 +77858,13 @@ vec4 envMapTexelToLinear(vec4 color) {
     			a.textContent = "G1";
     			add_location(h4, file$C, 308, 20, 17568);
     			add_location(b0, file$C, 309, 67, 17684);
-    			add_location(b1, file$C, 309, 90, 17707);
+    			add_location(b1, file$C, 309, 92, 17709);
     			add_location(span, file$C, 309, 20, 17637);
     			attr_dev(a, "href", "https://g1.globo.com/pb/paraiba/noticia/populacao-de-joao-pessoa-e-a-mais-obesa-do-nordeste-diz-ministerio-da-saude.ghtml");
     			attr_dev(a, "title", "G1");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file$C, 321, 34, 18231);
-    			add_location(small, file$C, 321, 20, 18217);
+    			add_location(a, file$C, 321, 34, 18235);
+    			add_location(small, file$C, 321, 20, 18221);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -78028,14 +78028,16 @@ vec4 envMapTexelToLinear(vec4 color) {
     	let t1;
     	let span;
     	let t2;
-    	let strong;
+    	let strong0;
     	let t4;
-    	let t5;
+    	let strong1;
     	let t6;
-    	let small;
     	let t7;
-    	let a;
+    	let t8;
+    	let small;
     	let t9;
+    	let a;
+    	let t11;
     	let current;
     	let if_block = /*dataContinent*/ ctx[2] && create_if_block_1$a(ctx);
 
@@ -78046,40 +78048,46 @@ vec4 envMapTexelToLinear(vec4 color) {
     			t1 = space();
     			span = element("span");
     			t2 = text("% de pessoas com ");
-    			strong = element("strong");
-    			strong.textContent = "IMC";
-    			t4 = text(" de 30 ou superior.");
-    			t5 = space();
+    			strong0 = element("strong");
+    			strong0.textContent = "IMC";
+    			t4 = text(" de ");
+    			strong1 = element("strong");
+    			strong1.textContent = "30";
+    			t6 = text(" ou superior.");
+    			t7 = space();
     			if (if_block) if_block.c();
-    			t6 = space();
+    			t8 = space();
     			small = element("small");
-    			t7 = text("Fonte: Banco de dados do Observatório Global da OMS, ");
+    			t9 = text("Fonte: Banco de dados do Observatório Global da OMS, ");
     			a = element("a");
     			a.textContent = "NCD Risk Factor";
-    			t9 = text(". Dados de 2014");
-    			add_location(h4, file$C, 326, 20, 18519);
-    			add_location(strong, file$C, 327, 43, 18616);
-    			add_location(span, file$C, 327, 20, 18593);
+    			t11 = text(". Dados de 2014");
+    			add_location(h4, file$C, 326, 20, 18523);
+    			add_location(strong0, file$C, 327, 43, 18620);
+    			add_location(strong1, file$C, 327, 67, 18644);
+    			add_location(span, file$C, 327, 20, 18597);
     			attr_dev(a, "href", "http://ncdrisc.org/");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "title", "NCD Risk Factor");
-    			add_location(a, file$C, 338, 80, 19164);
-    			add_location(small, file$C, 338, 20, 19104);
+    			add_location(a, file$C, 338, 80, 19185);
+    			add_location(small, file$C, 338, 20, 19125);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
     			insert_dev(target, t1, anchor);
     			insert_dev(target, span, anchor);
     			append_dev(span, t2);
-    			append_dev(span, strong);
+    			append_dev(span, strong0);
     			append_dev(span, t4);
-    			insert_dev(target, t5, anchor);
+    			append_dev(span, strong1);
+    			append_dev(span, t6);
+    			insert_dev(target, t7, anchor);
     			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, t6, anchor);
+    			insert_dev(target, t8, anchor);
     			insert_dev(target, small, anchor);
-    			append_dev(small, t7);
-    			append_dev(small, a);
     			append_dev(small, t9);
+    			append_dev(small, a);
+    			append_dev(small, t11);
     			current = true;
     		},
     		p: function update(ctx, dirty) {
@@ -78098,9 +78106,9 @@ vec4 envMapTexelToLinear(vec4 color) {
     			if (detaching) detach_dev(h4);
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(span);
-    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(t7);
     			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(t8);
     			if (detaching) detach_dev(small);
     		}
     	};
@@ -78197,14 +78205,14 @@ vec4 envMapTexelToLinear(vec4 color) {
     			t7 = text("Fonte: ");
     			a = element("a");
     			a.textContent = "UFPE: Universidade Federal de Pernambuco";
-    			add_location(h4, file$C, 341, 20, 19352);
-    			add_location(strong, file$C, 342, 34, 19416);
-    			add_location(span, file$C, 342, 20, 19402);
+    			add_location(h4, file$C, 341, 20, 19373);
+    			add_location(strong, file$C, 342, 34, 19437);
+    			add_location(span, file$C, 342, 20, 19423);
     			attr_dev(a, "href", "https://www.ufpe.br/");
     			attr_dev(a, "title", "UFPE: Universidade Federal de Pernambuco");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file$C, 352, 34, 19870);
-    			add_location(small, file$C, 352, 20, 19856);
+    			add_location(a, file$C, 352, 34, 19891);
+    			add_location(small, file$C, 352, 20, 19877);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -78350,8 +78358,8 @@ vec4 envMapTexelToLinear(vec4 color) {
     			t1 = space();
     			p = element("p");
     			p.textContent = "Seu IMC pode dizer se você está carregando muito peso, mas fique atento, ela não pode te dizer se você está carregando muita gordura.";
-    			add_location(h2, file$C, 359, 20, 20186);
-    			add_location(p, file$C, 360, 20, 20224);
+    			add_location(h2, file$C, 359, 20, 20207);
+    			add_location(p, file$C, 360, 20, 20245);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -78443,7 +78451,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			h5.textContent = "Distinção";
     			t1 = text("\r\n                        O IMC não mostra a diferença entre excesso de gordura, músculo ou osso.");
     			attr_dev(h5, "class", "alert-heading text-capitalize");
-    			add_location(h5, file$C, 368, 24, 20573);
+    			add_location(h5, file$C, 368, 24, 20594);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h5, anchor);
@@ -78533,7 +78541,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			h5.textContent = "Aplicação";
     			t1 = text("\r\n                        O IMC adulto não leva em consideração idade, sexo ou massa muscular.");
     			attr_dev(h5, "class", "alert-heading text-capitalize");
-    			add_location(h5, file$C, 374, 24, 20881);
+    			add_location(h5, file$C, 374, 24, 20902);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h5, anchor);
@@ -78702,7 +78710,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		c: function create() {
     			h6 = element("h6");
     			h6.textContent = "Importante:";
-    			add_location(h6, file$C, 386, 32, 21350);
+    			add_location(h6, file$C, 386, 32, 21371);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h6, anchor);
@@ -78788,7 +78796,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			strong = element("strong");
     			strong.textContent = "01";
     			t1 = text(" - Adultos e atletas musculosos podem ser classificados como \"acima do peso\" ou \"obesos\", embora a gordura corporal seja baixa.");
-    			add_location(strong, file$C, 391, 47, 21577);
+    			add_location(strong, file$C, 391, 47, 21598);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, strong, anchor);
@@ -78821,7 +78829,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			strong = element("strong");
     			strong.textContent = "02";
     			t1 = text(" - Os adultos que perdem músculos à medida que envelhecem podem cair na faixa de \"peso saudável\", embora possam estar carregando excesso de gordura.");
-    			add_location(strong, file$C, 392, 47, 21788);
+    			add_location(strong, file$C, 392, 47, 21809);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, strong, anchor);
@@ -78854,7 +78862,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			strong = element("strong");
     			strong.textContent = "03";
     			t1 = text(" - A gravidez também afeta o resultado do IMC da mulher. Você deve usar seu peso antes da gravidez ao calcular seu IMC.");
-    			add_location(strong, file$C, 393, 47, 22020);
+    			add_location(strong, file$C, 393, 47, 22041);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, strong, anchor);
@@ -79180,7 +79188,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     		c: function create() {
     			h6 = element("h6");
     			h6.textContent = "Links úteis:";
-    			add_location(h6, file$C, 402, 32, 22477);
+    			add_location(h6, file$C, 402, 32, 22498);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h6, anchor);
@@ -79267,7 +79275,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			attr_dev(a, "href", "https://www.saude.gov.br/noticias/agencia-saude/45612-brasileiros-atingem-maior-indice-de-obesidade-nos-ultimos-treze-anos");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "title", "Brasileiros atingem maior índice de obesidade nos últimos treze anos");
-    			add_location(a, file$C, 407, 47, 22705);
+    			add_location(a, file$C, 407, 47, 22726);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -79299,7 +79307,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			attr_dev(a, "href", "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/25261-ibge-da-inicio-a-pesquisa-nacional-de-saude-pns-2019");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "title", "IBGE dá início à Pesquisa Nacional de Saúde (PNS) 2019");
-    			add_location(a, file$C, 408, 47, 23068);
+    			add_location(a, file$C, 408, 47, 23089);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -79330,11 +79338,11 @@ vec4 envMapTexelToLinear(vec4 color) {
     			a = element("a");
     			strong = element("strong");
     			strong.textContent = "Índice de massa corporal (IMC)";
-    			add_location(strong, file$C, 409, 190, 23579);
+    			add_location(strong, file$C, 409, 190, 23600);
     			attr_dev(a, "href", "https://brasilescola.uol.com.br/educacao-fisica/Indice-massa-corporal-imc.htm");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "title", "Índice de massa corporal (IMC)");
-    			add_location(a, file$C, 409, 47, 23436);
+    			add_location(a, file$C, 409, 47, 23457);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -79367,7 +79375,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			attr_dev(a, "href", "https://www.youtube.com/watch?v=nLEZhM5vx0I");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "title", "Limitações do Índice de Massa Corporal");
-    			add_location(a, file$C, 410, 47, 23695);
+    			add_location(a, file$C, 410, 47, 23716);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -79939,9 +79947,9 @@ vec4 envMapTexelToLinear(vec4 color) {
     			attr_dev(section1, "id", "infograficos");
     			add_location(section1, file$C, 264, 8, 15699);
     			attr_dev(section2, "id", "alertas");
-    			add_location(section2, file$C, 356, 8, 20092);
+    			add_location(section2, file$C, 356, 8, 20113);
     			attr_dev(section3, "id", "importante");
-    			add_location(section3, file$C, 380, 8, 21135);
+    			add_location(section3, file$C, 380, 8, 21156);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, section0, anchor);
@@ -80289,7 +80297,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     			"SC-Florianópolis",
     			"SP-São Paulo",
     			"SE-Aracaju",
-    			"TO-Palma "
+    			"TO-Palmas"
     		],
     		datasets: [
     			{

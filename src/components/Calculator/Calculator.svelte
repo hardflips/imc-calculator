@@ -133,7 +133,8 @@
 
 	:global(.toast-body) {
 		font-size: 16px;
-		color: #333;
+		color: white;
+		background-color: #5e64ff;
 	}
 
 	:global(.toast-header) {
@@ -142,7 +143,6 @@
 
 	:global(.toast-body strong) {
 		font-size: 18px;
-		color: #28a745;
 	}
 	
 	:global(:invalid) {

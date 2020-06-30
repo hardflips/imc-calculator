@@ -98,7 +98,7 @@
             'SC-Florianópolis',
             'SP-São Paulo',
             'SE-Aracaju',
-            'TO-Palma '
+            'TO-Palmas'
         ],
         datasets: [
             {
@@ -307,7 +307,7 @@
             <Row>
                 <Col lg="12">
                     <h4>Excesso de peso nas capitais do Brasil</h4>
-                    <span>A maior taxa de excesso de peso ficou em <b>Rio Branco-AC</b> e <b>Palmas-TO</b> a menor.</span>
+                    <span>A maior taxa de excesso de peso ficou em <b>Rio Branco (AC)</b> e <b>Palmas (TO)</b> a menor.</span>
                     {#if dataBrazil}
                         <Chart
                             data={dataBrazil}
@@ -325,7 +325,7 @@
             <Row>
                 <Col lg="6">
                     <h4>Taxa de obesidade entre adultos por região.</h4>
-                    <span>% de pessoas com <strong>IMC</strong> de 30 ou superior.</span>
+                    <span>% de pessoas com <strong>IMC</strong> de <strong>30</strong> ou superior.</span>
                     {#if dataContinent}
                         <Chart
                             data={dataContinent}
