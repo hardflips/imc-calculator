@@ -13,3 +13,10 @@ body {
 .feedback-page {
 	margin: 24px;
 }
+
+.title {
+	overflow: hidden;
+	height: 0;
+	margin: 0;
+	padding: 0;
+}

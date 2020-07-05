@@ -32,7 +32,7 @@
 	<Card color="dark" inverse>
 		<CardHeader>
 			<CardTitle>
-				<h1 class="page-title">Peso ideal - Calculadora IMC</h1>
+				<h2 class="page-title">Peso ideal - Calculadora IMC</h2>
 			</CardTitle>
 		</CardHeader>
 		<CardBody>

@@ -203,9 +203,9 @@
 		}
 	}
 
-	@media (min-width: 480px) {
+	/* @media (min-width: 480px) {
 		
-	}
+	} */
 
 	@media (min-width: 801px) {
 		:global(.progress) {
@@ -261,11 +261,11 @@
 		}
 	}
 
-	@media (min-width:1025px) {
+	/* @media (min-width:1025px) {
 
 	}
 
 	@media (min-width: 1441px) {
 		
-	}
+	} */
 </style>
