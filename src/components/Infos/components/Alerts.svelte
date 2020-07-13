@@ -127,7 +127,7 @@
                 Alto risco à saúde - <strong>≥102cm</strong><br><br>
             </p>
             <h2>
-                Fêmea
+                Mulher
             </h2>
             <p>
                 Aumento do risco à saúde - <strong>≥80cm</strong> <br>
@@ -139,7 +139,7 @@
             <p>
                 Para verificar a relação cintura / quadril, meça a circunferência da cintura (como acima) e o tamanho do quadril na parte mais larga dos quadris. Divida sua circunferência abdominal pela sua medida do quadril para obter uma proporção.
                 Nas mulheres, uma relação cintura / quadril maior que 0,85 está associada a um risco acima da média.
-                Nos homens, uma relação cintura / quadril maior que 1,00 está associada a um risco acima da média.
+                Nos homens, uma relação cintura / quadril maior que 1,00 está associada a um risco acima da média.<br><br>
             </p>
 
             <h2>
