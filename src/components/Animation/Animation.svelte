@@ -21,6 +21,7 @@
 
 		container = document.createElement('header');
 		container.setAttribute('class', 'scene');
+		container.setAttribute('id', 'calculadora');
 		document.body.appendChild(container);
 
 		camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 2000);

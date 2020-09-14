@@ -32,7 +32,7 @@
 	<Card color="dark" inverse>
 		<CardHeader>
 			<CardTitle>
-				<h1 class="page-title">Peso ideal - Calculadora IMC</h1>
+				<h2 class="page-title">Peso ideal - Calculadora IMC</h2>
 			</CardTitle>
 		</CardHeader>
 		<CardBody>
@@ -133,7 +133,8 @@
 
 	:global(.toast-body) {
 		font-size: 16px;
-		color: #333;
+		color: white;
+		background-color: #5e64ff;
 	}
 
 	:global(.toast-header) {
@@ -142,7 +143,6 @@
 
 	:global(.toast-body strong) {
 		font-size: 18px;
-		color: #28a745;
 	}
 	
 	:global(:invalid) {
@@ -170,8 +170,9 @@
 		:global(.wrapper) {
 			position: absolute;
 			width: 100%;
-			min-height: 349px;
+			min-height: 346px;
 			max-height: 0;
+			border-radius: 4px;
 			transition: all .5s ease-in-out;
 			box-shadow: 0 0 8px rgba(0,0,0, .25);
 			bottom: 0;

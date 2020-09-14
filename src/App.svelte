@@ -1,9 +1,11 @@
 <script>
+	import Menu from './components/shared/Menu.svelte';
+	import Loading from './components/shared/Loading.svelte';
+	
 	import Animation from './components/Animation/Animation.svelte';
 	import Calculator from './components/Calculator/Calculator.svelte';
 	import Result from './components/Result/Result.svelte';
 	import Infos from './components/Infos/Infos.svelte';
-	import Loading from './components/shared/Loading.svelte';
 
 	let scene,
 		personGender = 'Mulher',
@@ -136,8 +138,8 @@
 				window.setTimeout(() => {
 					partialProgress('.progress-bar.low',progressData.low.range);
 					partialProgress('.progress-bar.normal',progressData.normal.range);
-					partialProgress('.progress-bar.override',progressData.obesity.range);
-					partialProgress('.progress-bar.obesity',progressData.override.range);
+					partialProgress('.progress-bar.override',progressData.override.range);
+					partialProgress('.progress-bar.obesity',progressData.obesity.range);
 				},500);
 			}
 		}
@@ -245,6 +247,8 @@
 	}
 
 </script>
+
+<Menu />
 
 <Animation
 	scene={scene}
