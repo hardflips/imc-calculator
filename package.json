@@ -19,6 +19,6 @@
     "sirv-cli": "^0.4.4",
     "svelte-frappe-charts": "^1.2.0",
     "sveltestrap": "^3.3.3",
-    "three": "^0.117.1"
+    "three": "^0.137.0"
   }
 }
